@@ -1,0 +1,44 @@
+:root {
+	/* light theme */
+	--theme--light-color-bg: rgb(33, 33, 33);
+	--theme--light--color-font: rgb(223, 223, 223);
+	--theme--light--color-font-alt: rgb(84, 82, 82);
+	--theme--light--color-cta: rgb(194, 90, 6);
+	--theme--light--color-cta-alt: rgb(213, 137, 76);
+
+	--media-query-flex-dir-main: row;
+}
+
+@media (max-width: 500px) {
+	:root {
+		--media-query-flex-dir-main: column;
+	}
+}
+
+body {
+	margin: unset;
+	background-color: var(--theme--light-color-bg);
+	color: var(--theme--light--color-font);
+	background-image: url(/Resources/Images/wave.svg);
+	background-size: 400%;
+	animation: slide_bg 4s infinite;
+}
+
+@keyframes slide_bg {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+header {
+	margin-top: 2em;
+	padding-left: 2em;
+}
+
+p {
+	padding: 1em;
+	font-family: "Titillium Web", sans-serif;
+}
