@@ -29,14 +29,25 @@ html {
 }
 body {
 	margin: unset;
+	/* max-height: 100vh; */
+	/* max-width: 100vw; */
 	padding: 0px;
 	background-color: var(--theme--light-color-bg);
 	color: var(--theme--light--color-font);
 	background-image: url(/Resources/Images/bg_loop.svg);
 	object-fit: cover;
 	min-width: 375px;
-	animation: a-slide_bg 90s ease-in-out infinite;
+	animation: a-slide_bg 100s ease-in-out infinite;
 	/* backdrop-filter: blur(8px); <--- can't use this if I want to use use sepia etc.  Possibly because of block position in the stack? */
+}
+
+.top-content-bottom {
+	display: flex;
+
+	background-color: red;
+	border: 1px black solid;
+	width: 100vw;
+	height: 100vh;
 }
 
 @keyframes a-slide_bg {
@@ -77,12 +88,14 @@ body {
 	height: 100%;
 }
 .magic-color-me {
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
-	padding: 7em;
-	animation: a-backdrop-filter-sepia 90s ease-in-out infinite alternate;
-	animation: a-backdrop-filter-contrast 75s ease-in-out infinite alternate;
+	width: 100%;
+	height: 100%;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-items: center; */
+	/* padding: 7em; */
+	animation: a-backdrop-filter-sepia 100s ease-in-out infinite alternate;
+	animation: a-backdrop-filter-contrast 90s ease-in-out infinite alternate;
 }
 header {
 	margin-top: 2em;
@@ -105,4 +118,10 @@ p {
 h2 {
 	font-weight: 900;
 	font-size: 56px;
+}
+
+.main-container {
+	display: flex;
+	/* max-width: 90em; */
+	/* min-width: 10em; */
 }
