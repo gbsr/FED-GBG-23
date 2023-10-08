@@ -34,18 +34,18 @@ body {
 	padding: 0px;
 	background-color: var(--theme--light-color-bg);
 	color: var(--theme--light--color-font);
-	background-image: url(/Resources/Images/bg_loop.svg);
+	background-image: url(/Resources/Images/pink_orange_bg_looping.svg);
 	object-fit: cover;
 	min-width: 375px;
-	animation: a-slide_bg 100s ease-in-out infinite;
+	animation: a-slide_bg 10s linear infinite;
 	/* backdrop-filter: blur(8px); <--- can't use this if I want to use use sepia etc.  Possibly because of block position in the stack? */
 }
 
 .top-content-bottom {
+	animation: a-backdrop-filter-sepia 10s ease-in-out infinite alternate;
+	animation: a-backdrop-filter-contrast 9s ease-in-out infinite alternate;
 	display: flex;
 
-	background-color: red;
-	border: 1px black solid;
 	width: 100vw;
 	height: 100vh;
 }
@@ -94,8 +94,6 @@ body {
 	/* flex-direction: column; */
 	/* justify-items: center; */
 	/* padding: 7em; */
-	animation: a-backdrop-filter-sepia 100s ease-in-out infinite alternate;
-	animation: a-backdrop-filter-contrast 90s ease-in-out infinite alternate;
 }
 header {
 	margin-top: 2em;
