@@ -36,7 +36,7 @@
 	border: 4px solid rgba(0, 0, 0, 0.664);
 	box-shadow: /* top+left white */ 1px -1px 2px rgba(255, 255, 255, 0.212),
 		/* bottom-right white */ -1px 1px 2px rgba(255, 255, 255, 0.226);
-	border-radius: 0px 60px 60px 0px;
+	border-radius: 0px 30px 30px 0px;
 }
 
 @keyframes a-gradient {

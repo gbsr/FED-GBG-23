@@ -3,7 +3,7 @@
 	--theme--light-color-bg: rgb(33, 33, 33);
 	--theme--light--color-font: rgb(53, 51, 51);
 	--theme--light--color-font-alt: rgb(84, 82, 82);
-	--theme--light--color-cta: rgb(194, 90, 6);
+	--theme--light--color-cta: rgb(6, 194, 169);
 	--theme--light--color-cta-alt: rgb(213, 137, 76);
 
 	--media-query-flex-dir-main: row;
@@ -22,17 +22,114 @@
 */ html {
 	scroll-behavior: smooth;
 }
+
+.top-content-bottom {
+	display: flex;
+	/* grid-template-columns: 4fr 2fr; */
+	/* grid-template-rows: 8fr 2fr; */
+	/* grid-column-gap: 10px; */
+	/* grid-row-gap: 10px; */
+}
+
 body {
-	background-image: url(/Resources/Images/bg_looping_haikei_pink_orange.svg);
+	background-image: url(/Resources/Images/pink_orange_bg_looping.svg);
+	background-size: 90%;
 	margin: 0px;
 	padding: 0px;
 	width: 100vw;
 	height: 100vh;
 	color: var(--theme--light--color-font);
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	animation: a-slide_bg 100s linear infinite;
 }
 
+header {
+	margin-top: 2em;
+	position: sticky;
+	top: 1em;
+	border: 2px solid pink;
+	width: fit-content;
+}
+
+main {
+	border: 2px solid pink;
+	padding: 2em;
+	height: 2000px;
+}
+
+footer {
+	position: sticky;
+	transform: translateY(0.3em) rotateZ(0.35deg);
+	bottom: 0;
+	width: 70%;
+	height: fit-content;
+	margin-left: 15%;
+	padding-bottom: 1em;
+
+	align-items: center;
+	height: 2.5rem; /* Footer height */
+
+	margin-top: 1em;
+	background: linear-gradient(
+		45deg,
+		rgb(153, 146, 91),
+		rgb(119, 116, 92),
+		rgb(119, 118, 111),
+		rgb(65, 63, 65),
+		rgb(64, 59, 64),
+		rgb(89, 76, 91),
+		rgb(134, 104, 138),
+		rgb(141, 53, 173),
+		rgb(196, 34, 182),
+		rgb(220, 107, 7),
+		rgb(255, 120, 1)
+	);
+	background-size: 600%;
+	background-position: left;
+	animation: a-gradient 90s infinite alternate ease-in-out;
+	border: 4px solid rgba(0, 0, 0, 0.664);
+	box-shadow: /* top+left white */ 1px -1px 2px rgba(255, 255, 255, 0.212),
+		/* bottom-right white */ -1px 1px 2px rgba(255, 255, 255, 0.226);
+	border-radius: 30px 30px 0px 0px;
+	display: flex;
+	padding: 1em;
+	justify-content: space-between;
+}
+
+.footer-item1,
+.footer-item2,
+.footer-item3,
+.footer-item4 {
+	color: var(--theme--light--color-cta-alt);
+	width: fit-content;
+	background-color: black;
+	/* to fix the 1px gap  */
+	margin: -1px;
+	/* background-color: black; */
+	letter-spacing: 5px !important;
+	font-size: 1.2em;
+	font-family: "Outfit", sans-serif;
+	font-weight: 900;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 2px;
+}
+
+.footer-item1 {
+	transform: rotateZ(0.65deg);
+}
+.footer-item2 {
+	transform: rotateZ(-0.43deg) scale(1.03);
+}
+
+.footer-item3 {
+	transform: rotateZ(0.1deg) scale(1.3);
+}
+
+.footer-item4 {
+	transform: rotateZ(-0.5deg) scale(1.3);
+	color: var(--theme--light--color-cta-alt);
+}
 @keyframes a-slide_bg {
 	0% {
 		background-position: 0px 0px;
@@ -70,7 +167,7 @@ body {
 .magic-color-me {
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 	animation: a-backdrop-filter-sepia 100s ease-in-out infinite alternate;
 	animation: a-backdrop-filter-contrast 90s ease-in-out infinite alternate;
 }
