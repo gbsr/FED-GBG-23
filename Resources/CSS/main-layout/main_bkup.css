@@ -23,14 +23,37 @@
 	scroll-behavior: smooth;
 }
 body {
-	background-image: url(/Resources/Images/bg_looping_haikei_pink_orange.svg);
-	margin: 0px;
+	margin: unset;
 	padding: 0px;
+	color: var(--theme--light--color-font);
+	background-image: url(/Resources/Images/pink_orange_bg_looping.svg);
+	animation: a-slide_bg 100s linear infinite;
+}
+
+.magic-color-me {
 	width: 100vw;
 	height: 100vh;
-	color: var(--theme--light--color-font);
-	overflow-x: hidden;
-	animation: a-slide_bg 100s linear infinite;
+	overflow: hidden;
+	animation: a-backdrop-filter-sepia 10s ease-in-out infinite alternate;
+	animation: a-backdrop-filter-contrast 9s ease-in-out infinite alternate;
+}
+
+.top-content-bottom {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-rows: 4fr 2fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.logo {
+	border: 1px black solid;
+	border-radius: 20px;
+	height: fit-content;
+	width: fit-content;
+	margin: 1em;
+	/* grid-row-start: 1; */
+	/* grid-row-end: 1; */
 }
 
 @keyframes a-slide_bg {
@@ -67,10 +90,24 @@ body {
 	}
 }
 
-.magic-color-me {
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	animation: a-backdrop-filter-sepia 100s ease-in-out infinite alternate;
-	animation: a-backdrop-filter-contrast 90s ease-in-out infinite alternate;
+header {
+	margin-top: 2em;
+	position: sticky;
+	top: 1em;
+}
+
+p,
+h2 {
+	padding: 1em;
+	font-family: "Titillium Web", sans-serif;
+	color: var(--theme--light--color-font);
+}
+
+p {
+	font-size: 36px;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 56px;
 }

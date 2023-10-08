@@ -1,13 +1,26 @@
 :root {
 	--animation-time: 10s;
+	--font-size-logo: 2em;
+}
+
+@media (max-width: 500px) {
+	:root {
+		--font-size-logo: 1em;
+	}
 }
 
 .card-container {
-	/* width: 100%; */
-	height: fit-content;
-	padding: 7em;
+	transform: translateX(-1.5em);
+	width: 46px;
+	height: 1em;
+	margin-top: 1em;
+	margin-right: 10em;
+	padding: 5em;
 	background: linear-gradient(
 		45deg,
+		rgb(153, 146, 91),
+		rgb(119, 116, 92),
+		rgb(119, 118, 111),
 		rgb(65, 63, 65),
 		rgb(64, 59, 64),
 		rgb(89, 76, 91),
@@ -15,20 +28,13 @@
 		rgb(141, 53, 173),
 		rgb(196, 34, 182),
 		rgb(220, 107, 7),
-		rgb(255, 120, 1),
-		rgb(255, 90, 1),
-		rgb(255, 69, 1)
+		rgb(255, 120, 1)
 	);
-
-	transform: translateX(-10%);
-
 	background-size: 600%;
 	background-position: left;
-	animation: a-gradient 45s infinite alternate ease-in-out;
+	animation: a-gradient 50s infinite alternate ease-in-out;
 	border: 4px solid rgba(0, 0, 0, 0.664);
-
-	box-shadow: 
-	/* top+left white */ 1px -1px 2px rgba(255, 255, 255, 0.212),
+	box-shadow: /* top+left white */ 1px -1px 2px rgba(255, 255, 255, 0.212),
 		/* bottom-right white */ -1px 1px 2px rgba(255, 255, 255, 0.226);
 	border-radius: 0px 60px 60px 0px;
 }
@@ -82,21 +88,15 @@
 	}
 }
 
-.card {
-	display: flex;
-	flex-direction: row;
-	flex-shrink: 2;
-	width: 100px;
-}
-
 .card-location-year {
 	position: absolute;
-	width: fit-content;
+	transform: translateY(-3.5em);
+	mix-blend-mode: color-burn;
 }
 
 .card-abbreviation {
 	z-index: 9999;
-	transform: rotateZ(-1deg) translateY(-0.35em);
+	transform: rotateZ(-1deg) translateY(-3.5em) translateX(-1.5em);
 }
 
 .card-text1-conf,
@@ -107,7 +107,7 @@
 .card-text3-topic {
 	color: var(--theme--light--color-cta);
 	letter-spacing: 5px !important;
-	font-size: 4rem;
+	font-size: 2em;
 	font-family: "Outfit", sans-serif;
 	font-weight: 900;
 }
@@ -138,14 +138,16 @@
 .card-text2-topic,
 .card-text3-topic {
 	width: fit-content;
-	height: calc (fit-content + 4em);
+
+	/* to fix the 1px gap  */
+	margin: -1px;
 	background-color: black;
 	border-radius: 0px 20px 0px 0px;
 }
 .card-text1-topic {
 	animation: a-fade infinite ease-in-out var(--animation-time);
 	color: var(--theme--light--color-cta-alt);
-	mix-blend-mode: difference;
+	border-radius: 10px 10px 0px 0px !important;
 }
 .card-text2-topic {
 	animation: a-fade infinite ease-in-out var(--animation-time);
@@ -156,4 +158,5 @@
 	animation: a-fade infinite ease-in-out var(--animation-time);
 	animation-delay: 2.657s;
 	color: var(--theme--light--color-cta-alt);
+	border-radius: 0px 10px 10px 10px !important;
 }
