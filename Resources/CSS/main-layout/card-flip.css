@@ -59,6 +59,8 @@
 	font-size: 2em;
 	font-family: "Outfit", sans-serif;
 	font-weight: 900;
+	text-shadow: none;
+	line-height: 1.25 !important;
 }
 
 .card-text1-conf {
