@@ -33,7 +33,7 @@
 	}
 }
 body {
-	background-image: url(/Resources/Images/stacked-waves-haikei_pink_orange_looping_blurred.svg);
+	background-image: url(../../Images/stacked-waves-haikei_pink_orange_looping_blurred.svg);
 	background-size: 300%;
 	width: 100%;
 	animation: a-slide_bg 100s linear infinite;
