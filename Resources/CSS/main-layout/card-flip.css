@@ -12,36 +12,16 @@
 .card-container {
 	transform: translateX(-0.25em);
 	width: 9.8em;
+	width: 0em;
 	height: 8em;
 	margin-top: 1em;
+	padding: 40px;
 	/* margin-right: 10em; */
 	/* padding: 5em; */
-	background: linear-gradient(
-		45deg,
-		rgb(153, 146, 91),
-		rgb(119, 116, 92),
-		rgb(119, 118, 111),
-		rgb(65, 63, 65),
-		rgb(64, 59, 64),
-		rgb(89, 76, 91),
-		rgb(134, 104, 138),
-		rgb(141, 53, 173),
-		rgb(196, 34, 182),
-		rgb(220, 107, 7),
-		rgb(255, 120, 1)
-	);
-	background-size: 600%;
-	background-position: left;
-	animation: a-gradient 50s infinite alternate ease-in-out;
-	border: 4px solid rgba(0, 0, 0, 0.664);
-	box-shadow: /* top+left white */ 1px -1px 2px rgba(255, 255, 255, 0.212),
-		/* bottom-right white */ -1px 1px 2px rgba(255, 255, 255, 0.226);
-	border-radius: 0px 30px 30px 0px;
 }
 
 .card-location-year {
 	transform: translateY(0.2em) translateX(3.25em);
-	mix-blend-mode: color-burn;
 }
 
 .card-abbreviation {
@@ -61,6 +41,7 @@
 	font-weight: 900;
 	text-shadow: none;
 	line-height: 1.25 !important;
+	z-index: 10;
 }
 
 .card-text1-conf {
@@ -82,7 +63,9 @@
 	mix-blend-mode: color-burn;
 	text-shadow: 1px 1px 2px rgb(21, 20, 20), 0 0 1em rgb(8, 8, 8),
 		0 0 0.2em rgba(235, 230, 234, 0.316);
-	color: rgb(255, 252, 219);
+	color: var(--theme--light--color-cta-alt);
+	height: 100%;
+	width: 100%;
 }
 
 .card-text1-topic,
