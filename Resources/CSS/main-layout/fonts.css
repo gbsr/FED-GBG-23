@@ -2,42 +2,61 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;700;900&family=Titillium+Web:wght@200;300;400;700&display=swap");
 
+:root {
+	--media-query--font-margin: 6em;
+	--media-query--font-size: 22px;
+}
 * {
 	color: #000000;
 	text-shadow: 0px 0px 4px rgba(197, 191, 191, 0.349);
 	/* line-height: 2.5em; */
 }
+
+@media (max-width: 920px) {
+	:root {
+		--media-query--font-margin: 2em;
+		--media-query--font-size: 18px;
+	}
+}
+
+@media (max-width: 395px) {
+	:root {
+		--media-query--resolution--padding: 0em;
+		--media-query--font-size: 1em;
+	}
+}
+h1,
+h2,
+.title,
 p {
 	letter-spacing: 2px;
-	font-size: 22px;
+	font-family: "Outfit", sans-serif;
+	font-weight: 900;
+	text-align: center;
+	margin-left: var(--media-query--font-margin);
+	margin-right: var(--media-query--font-margin);
+}
+
+p {
+	font-size: var(--media-query--font-size);
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 600;
-	margin-left: 1em;
-	margin-right: 1em;
 	margin-top: 0.2em;
 	padding: 2px;
 }
 
-h2,
-h1,
-.title {
-	letter-spacing: 2px !important;
-	font-size: 2em;
-	font-family: "Outfit", sans-serif;
-	font-weight: 900;
-	text-align: center;
-}
-
 .title {
 	padding-bottom: 0.35em;
-	font-size: 3em;
+	font-size: calc(1.5em + var(--media-query--font-size));
 }
 
 h1 {
-	font-size: 2.25em;
+	font-size: calc(0.7em + var(--media-query--font-size));
 	padding: 0.25em;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: calc(0.01em + var(--media-query--font-size));
+	/* font-size: 1.05em; */
+	/* font-size: 1.5em; */
 }

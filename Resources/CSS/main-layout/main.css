@@ -1,7 +1,6 @@
 :root {
 	--media-query--resolution--padding: 4em;
 	--media-query--container-height: 100vh;
-	/* --media-query-font-size:  */
 
 	--theme--light-color-bg: #333333;
 	--theme--light--color-font: rgb(53, 51, 51);
@@ -15,21 +14,24 @@
 }
 
 /* medium resolution */
-@media (max-width: 1000px) {
+@media (max-width: 920px) {
 	:root {
 		--media-query--container-height: 126vh;
 	}
 }
+
+/* Only to adjust padding when mid resolution */
 @media (max-width: 650px) {
 	:root {
-		--media-query--resolution--padding: 0em;
+		--media-query--resolution--padding: 0.25em;
 	}
 }
 
 /* small resolution */
 @media (max-width: 395px) {
 	:root {
-		--media-query--resolution--padding: 0.25em;
+		--media-query--resolution--padding: 0em;
+		--media-query--font-size: 14px;
 	}
 }
 body {
@@ -38,29 +40,16 @@ body {
 	width: 100%;
 	animation: a-slide_bg 100s linear infinite;
 	margin: auto;
-	/* overflow: hidden; */
 }
 
+/* ------------------------------------- Hue rotator -------------------- */
 .container {
 	display: flex;
 	flex-direction: column;
 	animation: a-backdrop-filter-hue-rotate 90s ease-in-out infinite alternate;
 	padding: 0px;
 	width: 100vw;
-	/* height: 100vh; */
 	height: var(--media-query--container-height);
-}
-
-.spacer {
-	/* width: 90%; */
-	margin: 0 auto;
-	padding: 1em;
-	/*transform:translateX(-5vw)*/
-	height: 1px;
-	/* background-color: rgba(24, 23, 23, 0.322); */
-	/* box-shadow: 0px 0px 2px black; */
-	/* border: 5px black solid; */
-	z-index: 9999999;
 }
 
 header {
@@ -79,7 +68,7 @@ main {
 	padding-left: var(--media-query--resolution--padding);
 	padding-top: var(--media-query--resolution--padding);
 	padding-right: var(--media-query--resolution--padding);
-	/* flex-grow: 1; */
+	z-index: 1;
 }
 
 /* ------------------------------ Animations --------------------------------------- */
@@ -111,7 +100,7 @@ main {
 		backdrop-filter: hue-rotate(0deg);
 	}
 	50% {
-		backdrop-filter: hue-rotate(360deg);
+		backdrop-filter: hue-rotate(50deg);
 	}
 	100% {
 		backdrop-filter: hue-rotate(0deg);
