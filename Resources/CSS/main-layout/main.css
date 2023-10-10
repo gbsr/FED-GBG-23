@@ -72,6 +72,10 @@ main {
 	padding-right: var(--media-query--resolution--padding);
 }
 
+.tm {
+	content: "\2122";
+}
+
 .main-wrapper {
 	z-index: 99999999;
 }
