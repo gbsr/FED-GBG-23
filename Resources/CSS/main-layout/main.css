@@ -21,12 +21,14 @@
 @media (max-width: 1024px) {
 	:root {
 		--media-query--container-height: 143vh;
+		/* --media-query--main-margin-top: 7em; */
 	}
 }
 
 /* Only to adjust padding when mid resolution */
 @media (max-width: 650px) {
 	:root {
+		/* --media-query--main-margin-top: 7em; */
 		--media-query--resolution--padding: 0.25em;
 	}
 }
@@ -34,6 +36,7 @@
 /* small resolution */
 @media (max-width: 395px) {
 	:root {
+		/* --media-query--main-margin-top: 7em; */
 		--media-query--resolution--padding: 0em;
 		--media-query--font-size: 14px;
 	}
@@ -70,6 +73,8 @@ header {
 
 /* ----------------------------- Main content here --------------------------------- */
 main {
+	/* margin-top: var(--media-query--main-margin-top); */
+	margin-top: 7em;
 	overflow-y: auto;
 	height: calc(100vh - var(--media-query--resolution--padding));
 	position: sticky;

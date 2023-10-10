@@ -20,23 +20,26 @@
 }
 
 /* -------------------------- Responsive Design --------------------------------- */
-@media (max-width: 920px) {
+@media (max-width: 1024px) {
 	:root {
-		--media-query--font-margin-left: 8em;
+		--media-query--font-margin-left: 2em;
 		--media-query--font-margin-right: 2.5em;
 		--media-query--font-size: 28px;
 	}
 }
-@media (min-width: 651px) {
+/* @media (min-width: 651px) {
 	:root {
-		--media-query--font-margin-right: 3.85em;
+		--media-query--font-margin-left: 10em;
+		--media-query--font-margin-right: 1.85em;
 		--media-query--font-size: 26px;
 	}
-}
+} */
 @media (min-width: 650px) {
 	:root {
+		--media-query--font-margin-left: 2em;
 		--media-query--font-margin-right: 5.5em;
 		--media-query--font-size: 26px;
+		/* padding-top: 4em; */
 	}
 }
 
