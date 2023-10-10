@@ -1,3 +1,4 @@
+/* -------------------------------- Main Variables ----------------------------- */
 :root {
 	--media-query-background-gradient: linear-gradient(
 		45deg,
@@ -13,29 +14,26 @@
 		rgb(220, 107, 7),
 		rgb(255, 120, 1)
 	);
-	--media-query-border: 4px solid rgba(0, 0, 0, 0.664);
-	--media-query-box-shadow: 
-	/* top+left white */ 1px -1px 2px rgba(255, 255, 255, 0.212),
-		/* bottom-right white */ -1px 1px 2px rgba(255, 255, 255, 0.226);
 	--media-query-flex-direction--footer: row;
-	--media-query--container-height: 100vh;
 	--media-query--footer-item-button-rotation: rotateZ(-3.6deg) scale(1.3)
 		translateX(0em) translateY(-0.25em);
-	--media-query--footer-height: 10vh;
+	--media-query--footer-height: 18vh;
 }
 
-@media (max-width: 1000px) {
+/* ------------------------ change footer depending on resolution -------------- */
+@media (max-width: 1024px) {
 	:root {
 		--media-query-flex-direction--footer: column;
-		--media-query--container-height: 112vh;
 		--media-query--footer-item-button-rotation: rotateZ(2.6deg) scale(1.3)
 			translateX(-1em);
-		--media-query--footer-height: 40vh;
+		--media-query--footer-height: 56vh;
 	}
 }
+
+/* ------------------------------ Main settings -------------------------------- */
 footer {
 	position: sticky;
-	height: var(--media-query--footer-height);
+	/* height: var(--media-query--footer-height); */
 	bottom: 0;
 	right: 2vw;
 	padding: 1em;
@@ -44,9 +42,14 @@ footer {
 	align-items: flex-end;
 	justify-content: flex-end;
 	overflow: hidden;
-	/* background-color: red; */
-}
 
+	/* We use z-indexing to make sure that the container is below other layers, 
+	/* so we can catch scroll-events.
+	/* The actual buttons etc will still be shown 
+	/* because the items are at another z-index :) */
+	z-index: -9000;
+}
+/* ------------------------- stuff inside the footer container ------------------*/
 .footer-item1,
 .footer-item2,
 .footer-item3,
@@ -63,7 +66,6 @@ footer {
 	margin-right: 1em;
 	margin-top: 0.2em;
 	padding: 5px;
-	/* flex-shrink: 1; */
 }
 
 .footer-item1 {
