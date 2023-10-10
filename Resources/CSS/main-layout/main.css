@@ -53,19 +53,27 @@ body {
 }
 
 header {
-	top: 1em;
+	position: sticky;
+	top: 0px;
 	padding-bottom: 1em;
+	height: 140px;
+	transform: translateY(-2.5em) translateX(-2.5em);
 }
 
 /* ----------------------------- Main content here --------------------------------- */
 main {
 	overflow-y: auto;
 	height: 80vh;
-	margin: 0 auto;
+	position: sticky;
+	top: 20vh;
+	/* margin: 0 auto; */
 	padding-left: var(--media-query--resolution--padding);
 	padding-top: var(--media-query--resolution--padding);
 	padding-right: var(--media-query--resolution--padding);
-	z-index: 1;
+}
+
+.main-wrapper {
+	z-index: 99999999;
 }
 
 /* ------------------------------ Animations --------------------------------------- */
