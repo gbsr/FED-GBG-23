@@ -20,6 +20,11 @@
 		<link
 			rel="stylesheet"
 			href="Resources/CSS/main-layout/footer.css" />
+
+		<link
+			rel="stylesheet"
+			href="Resources/CSS/main-layout/schedule.css" />
+			<link rel="stylesheet" href="Resources/CSS/main-layout/media-query.css">
 	</head>
 	<body>
 		<!--In order to animate the colors etc, we need to wrap inside a new container, because body can't animate bg and backdrop-filter at the same time.-->
@@ -41,13 +46,13 @@
 			</header>
 			<main>
 				<div class="title">Welcome to FEX 2023</div>
-				<h2>
+				<div class="p-strong">
 					A conference for Frontend Developers, by Frontend
 					Developers.
-				</h2>
-				<div class="p-strong">
-					This year is all about Better Web&trade;
 				</div>
+				<h2>
+					This year is all about Better Web&trade;
+				</h2>
 				<p>
 					For example, since some people have color-blindness, we've
 					decided to include a ridiculous amount of colors in this
@@ -60,8 +65,7 @@
 					make it more legible.
 				</p>
 				<p>If you squint hard enough, I'm sure you can see it.</p>
-				<p>See?</p>
-				<h2>Better Web&trade; 2023</h2>
+				<!-- <h2>Better Web 2023</h2> -->
 
 				<h1>
 					Talks for this year is focused on accessibility, responsive
@@ -82,12 +86,29 @@
 					that we follow both the rules and the most common design
 					principles, so get your ticket now and conform!
 				</h2>
+				<!----------------------------------- SCHEDULE START ------------------------------------------------------------->
+				<div
+					class="schedule"
+					id="schedule">
+					<!----------------------------------- FRIDAY --------------------------------------------------------------------->
+					<div class="schedule--day">Friday
+							<div class="schedule room">Cloud Center</div>
+							<div class="schedule room">The Garden</div>
+							<div class="schedule room">The Aula</div>
+						</div>
+					</div>
+				</div>
+				<!----------------------------------- SCHEDULE END ---------------------------------------------------------------->
 			</main>
+
+			<!------------------------------------- FOOTER -------------------------------->
 			<footer>
 				<div class="footer-item3">HOME</div>
 				<div class="footer-item2">ABOUT</div>
 				<div class="footer-item3">TALKS</div>
-				<div class="footer-item2">SCHEDULE</div>
+				<div class="footer-item2">
+					<a href="#schedule"><div class="footer-link">SCHEDULE</div></a>
+				</div>
 				<div class="footer-item-button">
 					<button class="footer-button">GET TICKETS</button>
 				</div>

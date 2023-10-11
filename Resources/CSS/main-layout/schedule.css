@@ -1,0 +1,34 @@
+:root {
+	--timeslot-1-hour: 180px;
+	--timeslot-30-mins: 90px;
+	--timeslot-width: 100px;
+	--media-query--flex-direction: row;
+}
+
+.schedule {
+	width: 100%;
+	gap: 4em;
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-evenly;
+	/* background-color: rgba(255, 255, 255, 0.034); */
+}
+
+.day {
+	/* padding: 1em; */
+	border: 1px solid rgb(187, 29, 29);
+	width: 100%;
+	border-radius: 30px;
+}
+
+.schedule--room {
+	border: 1px solid black;
+}
+
+.schedule--timeslot {
+	height: 180px;
+	width: 100px;
+	background-color: orange;
+	color: black;
+	border: 1px solid black;
+}

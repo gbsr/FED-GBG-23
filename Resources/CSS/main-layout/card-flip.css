@@ -1,31 +1,26 @@
 :root {
 	--animation-time: 10s;
-	--font-size-logo: 2em;
-}
-
-@media (max-width: 500px) {
-	:root {
-		--font-size-logo: 1em;
-	}
+	--font-size-logo: 1.5rem;
+	--logo-letter-spacing: 0.25rem;
+	--logo-line-height: 1.35rem;
+	--logo-placement: rotateZ(-1deg) translateY(-5.2rem) translateX(4.2rem);
 }
 
 .card-container {
-	transform: translateX(-0.25em);
-	width: 9.8em;
-	width: 0em;
-	height: 8em;
-	margin-top: 1em;
-	padding: 40px;
-	/* margin-right: 10em; */
-	/* padding: 5em; */
+	transform: translateX(-2rem);
+	width: 9.8rem;
+	width: 0rem;
+	height: 8rem;
+	margin-top: 1rem;
+	padding: 1.75rem;
 }
 
 .card-location-year {
-	transform: translateY(0.2em) translateX(3.25em);
+	transform: translateY(0.16rem) translateX(3.25rem);
 }
 
 .card-abbreviation {
-	transform: rotateZ(-1deg) translateY(-7.1em) translateX(1.5em);
+	transform: var(--logo-placement);
 }
 
 .card-text1-conf,
@@ -35,13 +30,14 @@
 .card-text2-topic,
 .card-text3-topic {
 	color: var(--theme--light--color-cta);
-	letter-spacing: 5px !important;
-	font-size: 2em;
+	letter-spacing: var(--logo-letter-spacing);
+	font-size: var(--font-size-logo);
 	font-family: "Outfit", sans-serif;
 	font-weight: 900;
 	text-shadow: none;
-	line-height: 1.25 !important;
+	line-height: var(--logo-line-height);
 	z-index: 10;
+	padding: 4px;
 }
 
 .card-text1-conf {
@@ -61,8 +57,7 @@
 .card-text2-conf,
 .card-text3-conf {
 	mix-blend-mode: color-burn;
-	text-shadow: 1px 1px 2px rgb(21, 20, 20), 0 0 1em rgb(8, 8, 8),
-		0 0 0.2em rgba(235, 230, 234, 0.316);
+	text-shadow: 1px 1px 2px rgb(21, 20, 20), 0 0 1em rgb(8, 8, 8), 0 0 0.2em rgba(235, 230, 234, 0.316);
 	color: var(--theme--light--color-cta-alt);
 	height: 100%;
 	width: 100%;
@@ -107,39 +102,39 @@
 @keyframes a-fade {
 	0% {
 		opacity: 100%;
-		transform: translateY(0px);
+		transform: translateY(0rem);
 	}
 
 	49% {
 		opacity: 100%;
-		transform: translateY(0px);
+		transform: translateY(0rem);
 	}
 	50% {
 		opacity: 0%;
-		transform: translateY(50px);
+		transform: translateY(0.2rem);
 	}
 
 	99% {
-		transform: translateY(50px);
+		transform: translateY(0.2rem);
 		opacity: 0%;
 	}
 }
 @keyframes a-scale {
 	0% {
 		opacity: 0;
-		transform: scale(1) translateX(0);
+		transform: scale(1rem) translateX(0rem);
 	}
 	49% {
 		opacity: 0;
-		transform: translateX(0) scale(1);
+		transform: translateX(0rem) scale(1);
 	}
 	50% {
 		opacity: 100%;
-		transform: translateX(-0.85em) scale(1.3);
+		transform: translateX(-0.85rem) scale(1.3rem);
 	}
 
 	99% {
-		transform: translateX(-0.85em) scale(1.3);
+		transform: translateX(-0.85rem) scale(1.3rem);
 		opacity: 100%;
 	}
 }

@@ -6,50 +6,20 @@
 
 /* ---------------------------------- Global Variables -------------------------- */
 :root {
-	--media-query--font-margin-left: 4em;
-	--media-query--font-margin-right: 6em;
-	--media-query--font-size: 28px;
+	--media-query--font-margin-left: 4rem;
+	--media-query--font-margin-right: 6rem;
+	--media-query--font-size: 100%;
+	--media-query--font-color: #0e0e0d;
 }
 
 /* ----------------- Global tiny highlight to increase legibility --------------- */
 * {
-	color: #0e0e0d;
+	color: var(--media-query--font-color);
 	text-shadow: 0px 2px 10px rgba(231, 226, 226, 0.527);
 	text-shadow: 2px 0px 10px rgba(245, 240, 240, 0.342);
-	line-height: 1.85em;
 }
 
 /* -------------------------- Responsive Design --------------------------------- */
-@media (max-width: 1024px) {
-	:root {
-		--media-query--font-margin-left: 2em;
-		--media-query--font-margin-right: 2.5em;
-		--media-query--font-size: 28px;
-	}
-}
-/* @media (min-width: 651px) {
-	:root {
-		--media-query--font-margin-left: 10em;
-		--media-query--font-margin-right: 1.85em;
-		--media-query--font-size: 26px;
-	}
-} */
-@media (min-width: 650px) {
-	:root {
-		--media-query--font-margin-left: 2em;
-		--media-query--font-margin-right: 5.5em;
-		--media-query--font-size: 26px;
-		/* padding-top: 4em; */
-	}
-}
-
-@media (max-width: 395px) {
-	:root {
-		--media-query--resolution--padding: 0em;
-		--media-query--font-size: 1em;
-		--media-query--font-margin-right: 2em;
-	}
-}
 
 /* --------------------------- Sizing etc ---------------------------------------- */
 h1,
@@ -61,6 +31,7 @@ p,
 	font-family: "Outfit", sans-serif;
 	font-weight: 900;
 	text-align: center;
+	line-height: 1.45rem;
 	margin-left: var(--media-query--font-margin-left);
 	margin-right: var(--media-query--font-margin-right);
 }
@@ -69,26 +40,33 @@ p {
 	font-size: var(--media-query--font-size);
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 600;
-	margin-top: 0.2em;
+	margin-top: 0.2rem;
+	margin-left: var(--media-query--font-margin-left);
+	margin-right: var(--media-query--font-margin-right);
 	padding: 2px;
 }
-.p-strong {
-	/* font-size: 12px; */
-	margin-top: 0.2em;
-	padding: 2px;
-	padding-bottom: 2em;
+h2 {
+	margin: 2rem;
+	font-size: 1.3rem;
+	font-weight: 600;
 }
 
 .title {
-	padding-bottom: 0.35em;
-	font-size: calc(1.5em + var(--media-query--font-size));
+	padding-bottom: 0.35rem;
+	font-size: 5rem;
+	line-height: 4.6rem;
+	margin: 0 auto;
 }
 
 h1 {
-	font-size: calc(0.7em + var(--media-query--font-size));
-	padding: 0.25em;
+	font-size: calc(0.7rem + var(--media-query--font-size));
+	/* padding: 0.25rem; */
 }
 
-h2 {
-	font-size: calc(0.01em + var(--media-query--font-size));
+.p-strong {
+	font-size: calc(0.1rem + var(--media-query--font-size));
+	line-height: 1rem;
+	margin-top: 1rem;
+	margin-left: var(--media-query--font-margin-left);
+	margin-right: var(--media-query--font-margin-right);
 }
