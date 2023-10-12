@@ -1,7 +1,11 @@
 :root {
+	--media-query--main-content--margin-top: 4rem;
+
 	--media-query--resolution--padding: 4rem;
+
 	--media-query--container-height: 100vh;
-	--media-query--content-left-right-margin: 4rem;
+	--media-query--content-left-right-margin: 18rem;
+
 	--theme--light-color-bg: #333333;
 	--theme--light--color-font: rgb(53, 51, 51);
 	--theme--light--color-font-alt: rgb(84, 82, 82);
@@ -16,45 +20,56 @@
 }
 * {
 	box-sizing: border-box;
-}
-
-* {
+	/* opacity: 0.9; */
+	/* border: 1px dashed black; */
+	margin: 0;
 	scroll-behavior: smooth;
 }
+
 body {
 	background-image: url(../../Images/3_col_bg_1600x900.svg);
-	animation: a-slide_bg 20s linear infinite alternate;
+	animation: a-slide_bg 200s linear infinite alternate;
 	background-size: cover;
-	overflow: hidden;
-	margin: unset;
+	/* overflow: hidden; */
+	margin: 0 auto;
+	height: auto;
+	width: 100vw;
 }
 
 /* ------------------------------------- Hue rotator -------------------- */
 .container {
-	display: flex;
-	flex-direction: column;
 	animation: a-backdrop-filter-hue-rotate 120s linear infinite alternate;
-	width: 100vw;
+	margin: 0;
+	/* backdrop-filter: blur(2px); */
+	padding: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	overflow: hidden;
+	/* flex-direction: column; */
+	/* width: 100vw; */
 }
 
 header {
 	position: sticky;
 	top: 0px;
-	transform: translateY(-2.5rem) translateX(-2.5rem);
+	transform: translateY(-0.5rem) translateX(-1.5rem);
 	z-index: 5;
 }
 
 /* ----------------------------- Main content here --------------------------------- */
 main {
 	overflow-y: auto;
+	height: 100vh;
+	width: 100vh;
 	/* top: vh; */
-	height: calc(100vh - var(--media-query--resolution--padding));
-	position: sticky;
-	margin: auto var(--media-query--content-left-right-margin);
-	padding-left: var(--media-query--resolution--padding);
-	padding-top: var(--media-query--resolution--padding);
-	padding-right: var(--media-query--resolution--padding);
-	bottom: 8vh;
+	/* height: calc(100vh - var(--media-query--resolution--padding)); */
+	/* position: sticky; */
+	/* margin: var(--media-query--content-left-right-margin); */
+	/* padding-left: var(--media-query--resolution--padding); */
+	/* padding-top: var(--media-query--resolution--padding); */
+	/* padding-right: var(--media-query--resolution--padding); */
+	/* bottom: 6vh; */
 }
 
 footer {

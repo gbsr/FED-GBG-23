@@ -1,34 +1,101 @@
 :root {
-	--timeslot-1-hour: 180px;
-	--timeslot-30-mins: 90px;
-	--timeslot-width: 100px;
+	--timeslot: 80px;
+	width: 100px;
 	--media-query--flex-direction: row;
 }
 
 .schedule {
 	width: 100%;
-	gap: 4em;
-	/* border: 1px solid black; */
+	gap: 1rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
-	/* background-color: rgba(255, 255, 255, 0.034); */
+	margin-top: 4rem;
 }
 
-.day {
-	/* padding: 1em; */
-	border: 1px solid rgb(187, 29, 29);
+.talks {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
 	width: 100%;
 	border-radius: 30px;
+	padding-top: 4rem;
 }
 
-.schedule--room {
-	border: 1px solid black;
+.talk-cloud-center,
+.talk-the-garden,
+.talk-separator,
+.room-cloud-center,
+.room-the-garden {
+	min-height: var(--timeslot);
 }
 
-.schedule--timeslot {
-	height: 180px;
-	width: 100px;
-	background-color: orange;
-	color: black;
+.talk-cloud-center {
+	/* padding: 1rem; */
+	background-color: rgba(26, 192, 218, 0.162);
+}
+.talk-the-garden {
+	background-color: rgba(255, 192, 203, 0.062);
+}
+
+.room-cloud-center,
+.room-the-garden,
+.room-the-aula {
+	align-items: center;
+	flex-grow: 4;
+	border-radius: 30px;
+	max-width: 100%;
+	padding: 1rem;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.room-cloud-center {
+	background-color: rgba(46, 108, 110, 0.164);
+	font-weight: 600;
+}
+
+.room-the-garden {
+	background-color: rgba(37, 158, 74, 0.164);
+	font-weight: 600;
+}
+
+.border {
+	margin: 1rem;
+}
+
+.talk-cloud-center,
+.talk-the-garden,
+.talk-separator {
+	display: flex;
+	flex: 1 1 0px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	height: var(--timeslot);
+
+	/* background-color: rgba(255, 192, 203, 0.062); */
+	border-radius: 10px;
+
+	/* margin: 0.5rem; */
+	padding: 1rem;
+}
+
+.talk-separator {
+	border: 1px dashed rgba(0, 0, 0, 0.397);
+	/* background-color: rgba(49, 46, 47, 0.062) !important; */
+}
+.talk-the-garden {
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.103);
 	border: 1px solid black;
+	background-color: rgba(172, 21, 202, 0.295) !important;
+	/* transform: rotateZ(0.25deg); */
+}
+.talk-cloud-center {
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.103);
+	border: 1px solid black;
+	background-color: rgba(18, 56, 224, 0.438) !important;
+	/* transform: rotateZ(-0.25deg); */
 }

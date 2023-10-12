@@ -1,9 +1,10 @@
 :root {
 	--animation-time: 10s;
-	--font-size-logo: 1.5rem;
+	--media-query--logo-font-size: 3rem;
 	--logo-letter-spacing: 0.25rem;
-	--logo-line-height: 1.35rem;
-	--logo-placement: rotateZ(-1deg) translateY(-5.2rem) translateX(4.2rem);
+	--media-query--logo-line-height: 2.25rem;
+	--media-query--logo-placement: rotateZ(-1deg) translateY(-7.64rem)
+		translateX(3.6rem);
 }
 
 .card-container {
@@ -20,7 +21,7 @@
 }
 
 .card-abbreviation {
-	transform: var(--logo-placement);
+	transform: var(--media-query--logo-placement);
 }
 
 .card-text1-conf,
@@ -31,11 +32,11 @@
 .card-text3-topic {
 	color: var(--theme--light--color-cta);
 	letter-spacing: var(--logo-letter-spacing);
-	font-size: var(--font-size-logo);
+	font-size: var(--media-query--logo-font-size);
 	font-family: "Outfit", sans-serif;
 	font-weight: 900;
 	text-shadow: none;
-	line-height: var(--logo-line-height);
+	line-height: var(--media-query--logo-line-height);
 	z-index: 10;
 	padding: 4px;
 }
@@ -57,7 +58,8 @@
 .card-text2-conf,
 .card-text3-conf {
 	mix-blend-mode: color-burn;
-	text-shadow: 1px 1px 2px rgb(21, 20, 20), 0 0 1em rgb(8, 8, 8), 0 0 0.2em rgba(235, 230, 234, 0.316);
+	text-shadow: 1px 1px 2px rgb(21, 20, 20), 0 0 1em rgb(8, 8, 8),
+		0 0 0.2em rgba(235, 230, 234, 0.316);
 	color: var(--theme--light--color-cta-alt);
 	height: 100%;
 	width: 100%;

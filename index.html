@@ -5,29 +5,27 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>FEX|GBG|2023</title>
-
+		<title>FEX|2023</title>
 		<link
 			rel="stylesheet"
 			href="Resources/CSS/main-layout/main.css" />
 		<link
 			rel="stylesheet"
+			href="Resources/CSS/main-layout/footer.css" />
+		<link
+			rel="stylesheet"
 			href="Resources/CSS/main-layout/fonts.css" />
-
 		<link
 			rel="stylesheet"
 			href="Resources/CSS/main-layout/card-flip.css" />
 		<link
 			rel="stylesheet"
-			href="Resources/CSS/main-layout/footer.css" />
-
+			href="Resources/CSS/main-layout/media-query.css" />
 		<link
 			rel="stylesheet"
 			href="Resources/CSS/main-layout/schedule.css" />
-			<link rel="stylesheet" href="Resources/CSS/main-layout/media-query.css">
 	</head>
 	<body>
-		<!--In order to animate the colors etc, we need to wrap inside a new container, because body can't animate bg and backdrop-filter at the same time.-->
 		<div class="container">
 			<header>
 				<div class="card-container">
@@ -45,70 +43,415 @@
 				</div>
 			</header>
 			<main>
-				<div class="title">Welcome to FEX 2023</div>
-				<div class="p-strong">
-					A conference for Frontend Developers, by Frontend
-					Developers.
+				<div class="text-content">
+					<div class="title">Welcome to FEX 2023</div>
+					<div class="p-strong">
+						A conference for Frontend Developers, by Frontend
+						Developers.
+					</div>
+					<h2>This year is all about Better Web&trade;</h2>
+					<p>
+						For example, since some people have color-blindness,
+						we've decided to include a ridiculous amount of colors
+						in this landing page.
+					</p>
+
+					<p>
+						You've probably noticed by now. That's all good and all.
+						We've also included a small white text-shadow on the
+						text to make it more legible.
+					</p>
+					<p>If you squint hard enough, I'm sure you can see it.</p>
+					<!-- <h2>Better Web 2023</h2> -->
+
+					<h1>
+						Talks for this year is focused on accessibility,
+						responsive design, and the most common layouts.
+					</h1>
+					<p>
+						Of course, we don't care about the most common layouts,
+						because why should we?
+					</p>
+					<p>
+						We decided to go full on late 90's, early 2000 scrap
+						book style instead, because.. why not?
+					</p>
+
+					<p>(Breaking the rules is ok)</p>
+					<h2>
+						Nevertheless, the talks we're hosting wants to make sure
+						that we follow both the rules and the most common design
+						principles, so get your ticket now and conform!
+					</h2>
 				</div>
-				<h2>
-					This year is all about Better Web&trade;
-				</h2>
-				<p>
-					For example, since some people have color-blindness, we've
-					decided to include a ridiculous amount of colors in this
-					landing page.
-				</p>
 
-				<p>
-					You've probably noticed by now. That's all good and all.
-					We've also included a small white text-shadow on the text to
-					make it more legible.
-				</p>
-				<p>If you squint hard enough, I'm sure you can see it.</p>
-				<!-- <h2>Better Web 2023</h2> -->
-
-				<h1>
-					Talks for this year is focused on accessibility, responsive
-					design, and the most common layouts.
-				</h1>
-				<p>
-					Of course, we don't care about the most common layouts,
-					because why should we?
-				</p>
-				<p>
-					We decided to go full on late 90's, early 2000 scrap book
-					style instead, because.. why not?
-				</p>
-
-				<p>(Breaking the rules is ok)</p>
-				<h2>
-					Nevertheless, the talks we're hosting wants to make sure
-					that we follow both the rules and the most common design
-					principles, so get your ticket now and conform!
-				</h2>
-				<!----------------------------------- SCHEDULE START ------------------------------------------------------------->
+				<!----------------------------------- SCHEDULE START -------------------------------------------------------------*
+                * -------------- Timeslots are 15 minutes each, so we use calc() to determine the height of the entry ------------*
+                * ---------------For example calc(var(--timeslot) * 4 equals an hour, --------------------------------------------* 
+                * -------------- whereas calc(var(--timeslot) * 2 equals half an hour -------------------------------------------->
 				<div
 					class="schedule"
 					id="schedule">
-					<!----------------------------------- FRIDAY --------------------------------------------------------------------->
-					<div class="schedule--day">Friday
-							<div class="schedule room">Cloud Center</div>
-							<div class="schedule room">The Garden</div>
-							<div class="schedule room">The Aula</div>
+					<!----------------------------------- FRIDAY ----------------------------------------------------------------->
+					<div class="day">
+						<h1>Friday</h1>
+						<!---------------------------------------- talks container------------->
+
+						<div class="talks">
+							<!------------------------------------ Cloud Center ------------------------->
+
+							<div class="room-cloud-center">
+								<h2>Cloud Center</h2>
+								<div class="border">
+									<div
+										class="talk-cloud-center"
+										style="
+											height: calc(var(--timeslot) * 4);
+										">
+										<h3>08:45 AM - 09:45 AM</h3>
+										<p>
+											Code Like It's 1999: A Nostalgic
+											Journey into Web Development
+										</p>
+									</div>
+								</div>
+
+								<div class="border">
+									<div class="talk-separator">
+										<!-- <h3>Break 15 min</h3> -->
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-cloud-center"
+										style="
+											height: calc(var(--timeslot) * 3);
+										">
+										<h3>10:00 AM - 10:45 AM</h3>
+										<p>
+											404 Pages That Make You LOL - A
+											Showcase of Hilarious Errors
+										</p>
+									</div>
+								</div>
+
+								<div class="border">
+									<div class="talk-separator">
+										<!-- <h3>Break 15 min</h3> -->
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-cloud-center"
+										style="
+											height: calc(var(--timeslot) * 2);
+										">
+										<h3>11:00 AM - 11:30 AM</h3>
+										The Art of Rapid Prototyping: How to
+										create a mess and worry about it later
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-separator"
+										style="
+											height: calc(var(--timeslot) * 2);
+										">
+										<!-- <h3>Break 30 min</h3> -->
+									</div>
+								</div>
+								<div class="border">
+									<div
+										class="talk-separator"
+										style="
+											height: calc(var(--timeslot) * 4);
+										">
+										<h3>12:00 PM - 13:00 PM</h3>
+										<h1>Lunch</h1>
+										<h2>(The Aula)</h2>
+									</div>
+								</div>
+								<div class="border">
+									<div
+										class="talk-separator"
+										style="
+											height: calc(var(--timeslot) * 2);
+										"></div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-cloud-center"
+										style="
+											height: calc(var(--timeslot) * 4);
+										">
+										<h3>01:30 PM - 02:30 PM</h3>
+										From Desktop to Pocket: Crafting a
+										Responsive Web Adventure
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-separator"
+										style="
+											height: calc(var(--timeslot) * 4);
+										">
+										<!-- <h1>CLOSED</h1> -->
+									</div>
+								</div>
+								<div class="border">
+									<div
+										class="talk-separator"
+										style="
+											height: calc(var(--timeslot) * 2);
+										">
+										<h3>03:30 PM - 09: 00 PM</h3>
+										<h1>Drinks and Chill</h1>
+										<h2>(The Aula)</h2>
+									</div>
+								</div>
+							</div>
+
+							<!-------------------------------------The Garden----------------------------->
+
+							<div class="room-the-garden">
+								<h2>The Garden</h2>
+
+								<div class="border">
+									<div
+										class="talk-the-garden"
+										style="
+											height: calc(var(--timeslot) * 4);
+										">
+										<h3>08:45 AM - 09:45 AM</h3>
+										Color Me Confident: A Designer's Guide
+										to Choosing Palettes
+									</div>
+								</div>
+
+								<div class="border">
+									<div class="talk-separator">
+										<!-- <h3>Break 15 min</h3> -->
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-the-garden"
+										style="
+											height: calc(var(--timeslot) * 3);
+										">
+										<h3>10:00 AM - 10:45 AM</h3>
+										404 Pages That Make You LOL: A Showcase
+										of Hilarious Errors
+									</div>
+								</div>
+
+								<div class="border">
+									<div class="talk-separator">
+										<!-- <h3>Break 15 min</h3> -->
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-the-garden"
+										style="
+											height: calc(var(--timeslot) * 4);
+										">
+										<h3>11:00 AM - 12:00 PM</h3>
+										Embracing the Dark Side: A Dive into
+										Dark Mode Design
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-separator"
+										style="
+											height: calc(var(--timeslot) * 4);
+										">
+										<h3>12:00 PM - 13:00 PM</h3>
+										<h1>Lunch</h1>
+										<h2>(The Aula)</h2>
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-the-garden"
+										style="
+											height: calc(var(--timeslot) * 2);
+										">
+										<h3>01:00 PM - 01:30 PM</h3>
+										The Great Font Heist: Stealing
+										Typography Secrets in 30 Minutes
+									</div>
+								</div>
+
+								<div class="border">
+									<div class="talk-separator">
+										<!-- <h2>Break 15 min</h2> -->
+									</div>
+								</div>
+								<div class="border">
+									<div
+										class="talk-the-garden"
+										style="
+											height: calc(var(--timeslot) * 3);
+										">
+										<h3>01:45 PM - 02:30 PM</h3>
+										Web Development Whack-a-Mole: Solving
+										Problems with a Hammer
+									</div>
+								</div>
+								<div class="border">
+									<div class="talk-separator">
+										<!-- <h2>Break 15 min</h2> -->
+									</div>
+								</div>
+								<div class="border">
+									<div
+										class="talk-the-garden"
+										style="
+											height: calc(var(--timeslot) * 3);
+										">
+										<h3>02:45 PM - 03:30 PM</h3>
+										Web Accessibility: Making the Internet a
+										Friendlier Place
+									</div>
+								</div>
+
+								<div class="border">
+									<div
+										class="talk-separator"
+										style="
+											height: calc(var(--timeslot) * 2);
+										">
+										<h3>03:30 PM - 09: 00 PM</h3>
+										<h1>Drinks and Chill</h1>
+										<h2>(The Aula)</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-------------------------------------- SATURDAY-->
+					<div class="day">
+						<h1>Saturday</h1>
+						<!---------------------------------------- talks container------------->
+
+						<div class="talks">
+							<!------------------------------------ Cloud Center ------------------------->
+
+							<div class="room-cloud-center">
+								<h2>Cloud Center</h2>
+								<div
+									class="talk-cloud-center"
+									style="height: calc(var(--timeslot) * 4)">
+									<h3>08:45 AM - 09:45 AM</h3>
+									<p>
+										Code Like It's 1999: A Nostalgic Journey
+										into Web Development
+									</p>
+								</div>
+
+								<div class="talk-separator">
+									<h3>Break 15 min</h3>
+								</div>
+
+								<div
+									class="talk-cloud-center"
+									style="height: calc(var(--timeslot) * 3)">
+									<h3>09:45 AM - 10:30 AM</h3>
+									<p>
+										Color Me Confident: A Designer's Guide
+										to Choosing Palettes
+									</p>
+								</div>
+
+								<div class="talk-separator">
+									<h3>Break 15 min</h3>
+								</div>
+
+								<div
+									class="talk-cloud-center"
+									style="height: calc(var(--timeslot) * 2)">
+									<h3>11:00 AM - 11:30 AM</h3>
+									The Art of Rapid Prototyping: How to create
+									a mess and worry about it later:
+								</div>
+
+								<!-- <div class="time" style="height: calc(var(--timeslot) * 2)"></div> -->
+
+								<div
+									class="talk-separator"
+									style="height: calc(var(--timeslot) * 6)">
+									<h3>11:30 AM - 13: 00 PM</h3>
+									<h1>Lunch</h1>
+								</div>
+							</div>
+
+							<!-------------------------------------The Garden----------------------------->
+
+							<div class="room-the-garden">
+								<h2>The Garden</h2>
+
+								<div
+									class="talk-the-garden"
+									style="height: calc(var(--timeslot) * 4)">
+									<h3>08:45 AM - 09:45 AM</h3>
+									Color Me Confident: A Designer's Guide to
+									Choosing Palettes
+								</div>
+
+								<div class="talk-separator">
+									<h3>Break 15 min</h3>
+								</div>
+
+								<div
+									class="talk-the-garden"
+									style="height: calc(var(--timeslot) * 2)">
+									<h3>10:00 AM - 10:30 AM</h3>
+									404 Pages That Make You LOL: A Showcase of
+									Hilarious Errors
+								</div>
+
+								<div class="talk-separator">
+									<h3>Break 30 min</h3>
+								</div>
+
+								<!-- <div
+									class="talk-the-garden"
+									style="height: calc(var(--timeslot) * 5)">
+									<h3>10:45 AM - 12:00 PM</h3>
+									Embracing the Dark Side: A Dive into Dark
+									Mode Design
+								</div> -->
+
+								<div
+									class="talk-separator"
+									style="height: calc(var(--timeslot) * 4)">
+									<h3>12:00 PM - 13: 00 PM</h3>
+									<h1>Lunch</h1>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!----------------------------------- SCHEDULE END ---------------------------------------------------------------->
 			</main>
-
-			<!------------------------------------- FOOTER -------------------------------->
 			<footer>
-				<div class="footer-item3">HOME</div>
-				<div class="footer-item2">ABOUT</div>
-				<div class="footer-item3">TALKS</div>
-				<div class="footer-item2">
-					<a href="#schedule"><div class="footer-link">SCHEDULE</div></a>
-				</div>
+				<a href="#home"><div class="footer-item1">HOME</div></a>
+				<a href="#about"><div class="footer-item2">ABOUT</div></a>
+				<a href="#talks"><div class="footer-item3">TALKS</div></a>
+				<a href="#schedule"
+					><div class="footer-schedule">SCHEDULE</div></a
+				>
 				<div class="footer-item-button">
 					<button class="footer-button">GET TICKETS</button>
 				</div>
