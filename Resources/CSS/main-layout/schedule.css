@@ -27,18 +27,7 @@
 	font-size: 1.25rem;
 	text-align: center;
 	font-weight: 600;
-}
-
-.room-cloud-center {
 	background-color: rgba(46, 108, 110, 0.164);
-	font-weight: 600;
-}
-
-.room-the-garden {
-	background-color: rgba(37, 158, 74, 0.164);
-	justify-content: center;
-	justify-items: center;
-	align-content: center;
 }
 
 .talk-cloud-center,

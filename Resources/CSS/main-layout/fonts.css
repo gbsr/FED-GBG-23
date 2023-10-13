@@ -63,6 +63,7 @@ h2 {
 
 h1 {
 	font-size: calc(0.7rem + var(--media-query--font-size));
+	line-height: 2.25rem;
 	/* padding: 0.25rem; */
 }
 
