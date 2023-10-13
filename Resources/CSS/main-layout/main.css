@@ -59,6 +59,7 @@ body {
 header {
 	position: sticky;
 	top: 0px;
+	width: 0px;
 	transform: translateY(-0.5rem) translateX(-1.5rem);
 	z-index: 5;
 }

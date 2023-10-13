@@ -1,7 +1,7 @@
 :root {
 	--timeslot: 80px;
 	width: 100px;
-	--media-query--flex-direction: row;
+	--media-query--schedule-flex-direction: row;
 }
 
 .schedule {
@@ -11,7 +11,7 @@
 
 .talks {
 	display: flex;
-	flex-direction: row;
+	flex-direction: var(--media-query--schedule-flex-direction);
 	gap: 1rem;
 	justify-content: center;
 	align-items: center;
@@ -104,4 +104,10 @@
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	max-width: 365px;
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--media-query--schedule-flex-direction: column;
+	}
 }

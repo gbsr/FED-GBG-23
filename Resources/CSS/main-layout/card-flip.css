@@ -1,14 +1,12 @@
 :root {
 	--animation-time: 10s;
-	--media-query--logo-font-size: 3rem;
+	/* --media-query--logo-font-size: clamp(0.667rem, 1vw + 0.5rem, 1.333rem); */
 	--logo-letter-spacing: 0.25rem;
 	--media-query--logo-line-height: 2.25rem;
-	--media-query--logo-placement: rotateZ(-1deg) translateY(-7.64rem)
-		translateX(3.6rem);
 }
 
 .card-container {
-	transform: translateX(-2rem);
+	transform: translateY(-1.5rem) translateX(rem);
 	width: 9.8rem;
 	width: 0rem;
 	height: 8rem;
@@ -16,12 +14,8 @@
 	padding: 1.75rem;
 }
 
-.card-location-year {
-	transform: translateY(0.16rem) translateX(3.25rem);
-}
-
 .card-abbreviation {
-	transform: var(--media-query--logo-placement);
+	transform: rotateZ(-1deg) translateY(-7.7rem) translateX(0.5rem);
 }
 
 .card-text1-conf,
@@ -32,11 +26,11 @@
 .card-text3-topic {
 	color: var(--theme--light--color-cta);
 	letter-spacing: var(--logo-letter-spacing);
-	font-size: var(--media-query--logo-font-size);
+	font-size: clamp(1.667rem, 4vw + 0.5rem, 3.167rem);
 	font-family: "Outfit", sans-serif;
 	font-weight: 900;
 	text-shadow: none;
-	line-height: var(--media-query--logo-line-height);
+	line-height: 2rem;
 	z-index: 10;
 	padding: 4px;
 }
@@ -57,7 +51,7 @@
 .card-text1-conf,
 .card-text2-conf,
 .card-text3-conf {
-	mix-blend-mode: color-burn;
+	mix-blend-mode: invert(70%);
 	text-shadow: 1px 1px 2px rgb(21, 20, 20), 0 0 1em rgb(8, 8, 8),
 		0 0 0.2em rgba(235, 230, 234, 0.316);
 	color: var(--theme--light--color-cta-alt);

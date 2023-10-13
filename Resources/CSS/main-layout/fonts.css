@@ -8,8 +8,8 @@
 :root {
 	--media-query--font-margin-left: 4rem;
 	--media-query--font-margin-right: 6rem;
-	--media-query--font-size: 100%;
 	--media-query--font-color: #0e0e0d;
+	font-size: 12px;
 }
 
 /* ----------------- Global tiny highlight to increase legibility --------------- */
@@ -35,22 +35,28 @@ p,
 	font-weight: 900;
 	text-align: center;
 	line-height: 1.45rem;
-	/* margin-left: var(--media-query--font-margin-left); */
-	/* margin-right: var(--media-query--font-margin-right); */
 }
 
 p {
-	font-size: var(--media-query--font-size);
+	font-size: clamp(1rem, 0.5vw + 1rem, 1.833rem);
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 600;
-	margin-top: 0.2rem;
-	/* margin-left: var(--media-query--font-margin-left); */
-	/* margin-right: var(--media-query--font-margin-right); */
-	padding: 2px;
+	text-align: left;
+	/* margin-top: 0.2rem; */
+	/* padding: 2px; */
+}
+h1 {
+	font-size: clamp(1.083rem, 1vw + 1rem, 2.167rem);
+	line-height: 2.25rem;
 }
 h2 {
 	margin: 2rem;
-	font-size: 1.3rem;
+	font-size: clamp(2rem, 1vw + 1rem, 4rem);
+	font-weight: 600;
+}
+h3 {
+	/* margin: 2rem; */
+	font-size: clamp(1rem, 0.5vw + 1rem, 1.233rem);
 	font-weight: 600;
 }
 
@@ -61,21 +67,18 @@ h2 {
 	margin: 0 auto;
 }
 
-h1 {
-	font-size: calc(0.7rem + var(--media-query--font-size));
-	line-height: 2.25rem;
-	/* padding: 0.25rem; */
-}
-
 .p-strong {
 	font-size: calc(0.1rem + var(--media-query--font-size));
 	line-height: 1rem;
 	margin-top: 1rem;
-	/* margin-left: var(--media-query--font-margin-left); */
-	/* margin-right: var(--media-query--font-margin-right); */
 }
 
 .break {
 	color: rgba(29, 28, 28, 0.685);
 	text-shadow: none;
+}
+@media (max-width: 1024px) {
+	:root {
+		--media-query--content-left-right-margin: 12rem;
+	}
 }
