@@ -32,7 +32,7 @@
 
 .talk-cloud-center,
 .talk-the-garden,
-.talk-separator,
+.timeslot,
 .talk-the-aula {
 	height: var(--timeslot);
 	border-radius: 10px;
@@ -46,31 +46,31 @@
 	flex-wrap: nowrap;
 }
 
-.talk-separator {
+.timeslot {
 	width: 365px;
 	background-color: rgba(105, 75, 75, 0.123);
 	border: 1px dashed rgba(0, 0, 0, 0.507);
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
 }
-.talk-separator-15 {
+.time-15 {
 	height: var(--timeslot);
 }
-.talk-separator-30 {
+.time-30 {
 	height: calc(var(--timeslot) * 2);
 }
-.talk-separator-45 {
+.time-45 {
 	height: calc(var(--timeslot) * 3);
 }
-.talk-separator-60 {
+.time-60 {
 	height: calc(var(--timeslot) * 4);
 }
-.talk-separator-75 {
+.time-75 {
 	height: calc(var(--timeslot) * 5);
 }
-.talk-separator-90 {
+.time-90 {
 	height: calc(var(--timeslot) * 6);
 }
-.talk-separator-120 {
+.time-120 {
 	height: calc(var(--timeslot) * 8);
 }
 

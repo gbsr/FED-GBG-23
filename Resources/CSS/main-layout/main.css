@@ -78,10 +78,6 @@ footer {
 	content: "\2122";
 }
 
-.main-wrapper {
-	z-index: 99999999;
-}
-
 /* ------------------------------ Animations --------------------------------------- */
 
 @keyframes a-slide_bg {
@@ -93,18 +89,6 @@ footer {
 		background-position: 3200px 0px;
 	}
 }
-
-/* @keyframes a-backdrop-filter-sepia {
-	0% {
-		backdrop-filter: sepia(0);
-	}
-	50% {
-		backdrop-filter: sepia(55%);
-	}
-	100% {
-		backdrop-filter: sepia(0%);
-	}
-} */
 
 @keyframes a-backdrop-filter-hue-rotate {
 	0% {
