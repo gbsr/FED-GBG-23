@@ -37,26 +37,31 @@ p,
 	line-height: 1.45rem;
 }
 
-p {
+p,
+.break {
 	font-size: clamp(1rem, 0.5vw + 1rem, 1.833rem);
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 600;
 	text-align: left;
+	line-height: 2rem;
+	letter-spacing: 0.1rem;
 	/* margin-top: 0.2rem; */
 	/* padding: 2px; */
 }
 h1 {
 	font-size: clamp(1.083rem, 1vw + 1rem, 2.167rem);
-	line-height: 2.25rem;
+	letter-spacing: 0.18rem;
+	line-height: 3rem;
 }
 h2 {
 	margin: 2rem;
 	font-size: clamp(2rem, 1vw + 1rem, 4rem);
 	font-weight: 600;
+	line-height: 2.5rem;
 }
 h3 {
 	/* margin: 2rem; */
-	font-size: clamp(1rem, 0.5vw + 1rem, 1.233rem);
+	font-size: clamp(1rem, 0.6vw + 1rem, 1.233rem);
 	font-weight: 600;
 }
 
@@ -65,6 +70,10 @@ h3 {
 	font-size: 5rem;
 	line-height: 4.6rem;
 	margin: 0 auto;
+}
+.break
+{
+	
 }
 
 .p-strong {
