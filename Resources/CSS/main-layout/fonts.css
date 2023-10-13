@@ -1,5 +1,5 @@
 /* ----------------------------------- Global Fonts ----------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&family=Raleway:wght@400;500;600;700;900&family=Rubik:wght@400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&family=Raleway:wght@400;500;600;700;900&family=Rubik:wght@400;600;700;900&display=swap");
 /* ---------------------------------- Global Variables -------------------------- */
 :root {
 	--media-query--font-margin-left: 4rem;
@@ -53,9 +53,10 @@ p,
 	/* padding: 2px; */
 }
 h1 {
-	font-size: clamp(1.083rem, 1vw + 1rem, 2.167rem);
-	letter-spacing: 0.18rem;
+	font-size: clamp(1.3rem, 1vw + 1rem, 2.167rem);
+	letter-spacing: 0.2rem;
 	line-height: 3rem;
+	/* font-family: "Outfit", sans-serif; */
 }
 h2 {
 	font-size: clamp(2rem, 1vw + 1rem, 4rem);
@@ -68,12 +69,17 @@ h3 {
 	font-weight: 600;
 }
 
-.title {
+.title,
+.title-huge {
 	font-family: "Outfit", sans-serif;
 	padding-bottom: 0.35rem;
 	font-size: 5rem;
 	line-height: 4.6rem;
 	margin: 0 auto;
+}
+.title-huge {
+	font-size: 8rem;
+	font-weight: 900;
 }
 
 .p-strong {
