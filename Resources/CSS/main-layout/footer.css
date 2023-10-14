@@ -4,16 +4,51 @@
 	--media-query--footer-item-button-rotation: rotateZ(-3.6deg) scale(1.3)
 		translateX(0em) translateY(-0.4rem);
 
-		--footer-font-size: clamp(0.667rem, 1vw + 0.5rem, 1.333rem);
+	--footer-font-size: clamp(0.667rem, 1vw + 0.5rem, 1.333rem);
 	--footer-padding: 1.35rem;
 	--footer-button-line-height: 1.2rem;
-	--media-query--footer-width: 98%;
+	--footer-width: 98%;
+
+	--footer-bottom-right: 2rem;
+	--footer-bottom: 0rem;
+
+	/* home */
+	--home-translateX: -1.5rem;
+	--home-translateY: 1rem;
+	--home-rotateZ: 0.7deg;
+	--home-scale: 1.3;
+	/* about */
+
+	--about-translateX: 0rem;
+	--about-translateY: -0.1rem;
+	--about-rotateZ: -2deg;
+	--about-scale: 1.38;
+	/* talks */
+
+	--talks-translateX: 0.3rem;
+	--talks-translateY: 0.55rem;
+	--talks-rotateZ: -1deg;
+	--talks-scale: 1.3;
+	/* schedule */
+
+	--schedule-translateX: 12rem;
+	--schedule-translateY: 0.4rem;
+	--schedule-rotateZ: 1.25deg;
+	--schedule-scale: 1.45;
+	/* get ticket */
+
+	--ticket-translateX: -12rem;
+	--ticket-translateY: -3.35rem;
+	--ticket-rotateZ: -3.35deg;
+	--ticket-scale: 1.65;
 }
 
 footer {
-	width: var(--media-query--footer-width);
+	width: fit-content;
+	right: var(--footer-bottom-right);
+	bottom: var(--footer-bottom);
 	position: fixed;
-	bottom: -8px;
+	transform: translateX(-1rem) translateY(0.6rem);
 	padding: 1rem;
 	display: flex;
 	flex-direction: var(--media-query-flex-direction--footer);
@@ -22,77 +57,107 @@ footer {
 	/* overflow: hidden; */
 }
 /* ------------------------- stuff inside the footer container ------------------*/
-.footer-item1,
-.footer-item2,
-.footer-item3,
-.footer-item4,
-.footer-schedule {
+.footer-home,
+.footer-about,
+.footer-talks,
+.footer-schedule,
+.footer-get-tickets {
 	color: var(--theme--light--color-cta-alt);
-	/* width: fit-content; */
+	margin: 1rem;
 	background-color: black;
 	letter-spacing: 5px !important;
 	font-size: var(--footer-font-size);
 	font-family: "Outfit", sans-serif;
 	font-weight: 900;
-	/* margin-left: 1rem; */
-	/* margin-right: 1rem; */
-	/* margin-top: 0.2rem; */
 	padding: 5px;
-	/* transform: var(--media-query--footer-translate-x); */
 }
 
 .footer-schedule {
-	/* width: 50px; */
-	/* height: 10px; */
-	transform: translateY(-1rem) translateX(2rem);
-	/* transform: translateX(var(--media-query--footer-translate-x)); */
-	/* transform: translateY(calc(-2rem + var(--media-query--footer-translate-y))); */
+	/* transform: translateY(-1rem) translateX(2rem); */
 	text-decoration: none;
 }
 
-.footer-item1 {
-	transform: rotateZ(0.65deg) var(--media-query--footer-translate-x)
-		var(--media-query--footer-translate-y);
+.footer-home {
+	transform: translateX(var(--home-translateX))
+		translateY(var(--home-translateY)) scale(var(--home-scale))
+		rotateZ(var(--home-rotateZ));
 	text-shadow: none;
 }
-.footer-item2 {
-	transform: rotateZ(-0.43deg) scale(1.03)
-		var(--media-query--footer-translate-x)
-		var(--media-query--footer-translate-y);
-	text-shadow: none;
-}
-
-.footer-item3 {
-	transform: rotateZ(0.1deg) scale(1.3) var(--media-query--footer-translate-x)
-		var(--media-query--footer-translate-y);
+.footer-about {
+	transform: translateX(var(--about-translateX))
+		translateY(var(--about-translateY)) scale(var(--about-scale))
+		rotateZ(var(--about-rotateZ));
 	text-shadow: none;
 }
 
-.footer-item4 {
-	transform: rotateZ(-0.5deg) scale(1.3) translateX(1rem);
+.footer-talks {
+	transform: translateX(var(--talks-translateX))
+		translateY(var(--talks-translateY)) scale(var(--talks-scale))
+		rotateZ(var(--talks-rotateZ));
+	text-shadow: none;
+}
+
+.footer-schedule {
+	transform: translateX(var(--schedule-translateX))
+		translateY(var(--schedule-translateY)) scale(var(--schedule-scale))
+		rotateZ(var(--schedule-rotateZ));
 	color: var(--theme--light--color-cta-alt);
-	z-index: 6;
 	text-shadow: none;
+	z-index: 9999;
 }
-.footer-item-button {
-	height: 1rem;
-	transform: var(--media-query--footer-item-button-rotation)
-		var(--media-query--footer-translate-y);
-	z-index: 5;
-}
-button {
-	border: none;
-}
-
-.footer-button {
-	
-	padding: var(footer-padding);
+.footer-get-tickets {
+	transform: translateX(var(--ticket-translateX))
+		translateY(var(--ticket-translateY)) scale(var(--ticket-scale))
+		rotateZ(var(--ticket-rotateZ));
+	padding: 1rem;
 	border-radius: 10px;
-	transform: rotateZ(0.2deg) scale(1.5);
 	background-color: var(--theme--light--color-cta-alt);
-	box-shadow: 0px 0px 2px rgb(0, 0, 0);
 	color: black;
+	box-shadow: 0px 0px 4px rgb(0, 0, 0);
 	line-height: var(--footer-button-line-height);
 	font-size: var(--footer-font-size);
-	--footer-button-margin: 0.1rem;
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--footer-bottom: -5rem;
+		--footer-bottom-right: 6.25rem;
+		/* home */
+		--home-translateX: 9rem;
+		--home-translateY: -0.35rem;
+		--home-rotateZ: -2deg;
+		--home-scale: 1.1;
+
+		/* about */
+		--about-translateX: 9rem;
+		--about-translateY: -2rem;
+		--about-rotateZ: 0.7deg;
+		--about-scale: 1;
+
+		/* talks */
+		--talks-translateX: 9.3rem;
+		--talks-translateY: -3.45rem;
+		--talks-rotateZ: -1deg;
+		--talks-scale: 1.15;
+
+		/* schedule */
+		--schedule-translateX: 8.5rem;
+		--schedule-translateY: -0.6rem;
+		--schedule-rotateZ: 1.25deg;
+		--schedule-scale: 1.15;
+
+		/* get ticket */
+		--ticket-translateX: 8.5rem;
+		--ticket-translateY: -9rem;
+		--ticket-rotateZ: 2.35deg;
+		--ticket-scale: 1.05;
+
+		--media-query-flex-direction--footer: column;
+		--footer-width: 92%;
+		--media-query--footer-flex-align-items: flex-end;
+		--media-query--footer-item-button-rotation: rotateZ(2.6deg) scale(1.3)
+			translateX(-1rem);
+		--media-query--footer-translate-x: translateX(3rem);
+		--media-query--footer-translate-y: translateY(-0.5rem);
+	}
 }

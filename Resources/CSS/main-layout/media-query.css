@@ -11,20 +11,8 @@
 
 @media (max-width: 1024px) {
 	:root {
-		/* schedule */
-		/* header */
-		/* --media-query--logo-line-height: 1.25rem; */
-		/* --media-query--logo-placement: rotateZ(-1deg) translateY(-4.7rem)
-			translateX(3.6rem); */
-		/* footer */
-		--media-query-flex-direction--footer: column;
-		--media-query--footer-width: 92%;
-		--media-query--footer-flex-align-items: flex-end;
-		--media-query--footer-item-button-rotation: rotateZ(2.6deg) scale(1.3)
-			translateX(-1rem);
-		--media-query--footer-translate-x: translateX(3rem);
-		--media-query--footer-translate-y: translateY(-0.5rem);
-		/* main */
+		
+		
 		--media-query--content-left-right-margin: 12rem;
 
 		--media-query--schedule-flex-direction: column;
