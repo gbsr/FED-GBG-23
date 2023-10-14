@@ -47,11 +47,17 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
-.spacer {
+.spacer,
+.spacer-talk {
 	margin: 2rem;
 	width: 50vw;
 	height: 1px;
 	background-color: rgba(0, 0, 0, 0.192);
+}
+
+.spacer-talk {
+	margin-top: 6rem;
+	margin-bottom: 6rem;
 }
 
 /* ------------------------------------- Hue rotator -------------------- */
@@ -59,8 +65,9 @@ body {
 	animation: a-backdrop-filter-hue-rotate 120s linear infinite alternate;
 	margin: 0;
 	padding: 0;
-	width: 100vw;;
+	width: 100vw;
 	min-height: 100vh;
+	/* background-color: rgba(0, 0, 0, 0.288); */
 	display: flex;
 	overflow-x: hidden;
 }

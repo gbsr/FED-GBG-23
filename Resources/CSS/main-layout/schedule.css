@@ -9,7 +9,8 @@
 	margin-top: 4rem;
 }
 
-.talks {
+/* Timetable */
+.talks-timetable {
 	display: flex;
 	flex-direction: var(--media-query--schedule-flex-direction);
 	gap: 1rem;

@@ -6,5 +6,66 @@
 		"Inclusivity",
 		"timeslot",
 		"Timeslots"
+	],
+	"saveEditorLayout.list": [
+		{
+			"name": "Dual-mon",
+			"documents": [
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\Resources\\CSS\\main-layout\\main.css",
+					"column": 1,
+					"pinned": false
+				},
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\Resources\\CSS\\main-layout\\schedule.css",
+					"column": 1,
+					"pinned": false
+				},
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\Resources\\CSS\\main-layout\\fonts.css",
+					"column": 1,
+					"pinned": false
+				},
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\Resources\\CSS\\main-layout\\footer.css",
+					"column": 1,
+					"pinned": false
+				},
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\index.html",
+					"column": 1,
+					"pinned": false
+				},
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\index.html",
+					"column": 2,
+					"pinned": false
+				},
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\talks-blurbs\\TALKS.txt",
+					"column": 3,
+					"pinned": false
+				},
+				{
+					"fsPath": "f:\\_NBI\\FED-GBG-23\\talks-blurbs\\talks-days.txt",
+					"column": 3,
+					"pinned": false
+				}
+			],
+			"layout": {
+				"orientation": 0,
+				"groups": [
+					{
+						"size": 737
+					},
+					{
+						"size": 868
+					},
+					{
+						"size": 1646
+					}
+				]
+			}
+		}
 	]
 }
