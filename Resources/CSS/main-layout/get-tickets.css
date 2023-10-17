@@ -10,3 +10,19 @@
 	border: 1px black solid;
 	padding: 1rem;
 }
+
+.spacer-ticket {
+	/* width: auto; */
+	margin: auto;
+	height: 1px;
+	border: 1px dashed rgba(0, 0, 0, 0.507);
+}
+.container--ticket-price {
+	width: 365px;
+	background-color: rgba(105, 75, 75, 0.123);
+	border: 1px dashed rgba(0, 0, 0, 0.507);
+	border-radius: 30px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
+	padding: 1rem;
+	margin-bottom: 4rem;
+}
