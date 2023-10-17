@@ -35,6 +35,10 @@
 	flex-direction: column;
 }
 
+.talk-the-aula {
+	font-family: "Outfit" sans-serif;
+}
+
 .talk-cloud-center,
 .talk-the-garden,
 .timeslot,
