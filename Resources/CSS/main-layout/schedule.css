@@ -1,6 +1,6 @@
 :root {
 	--timeslot: 80px;
-	width: 100px;
+	width: 260px;
 	--media-query--schedule-flex-direction: row;
 }
 

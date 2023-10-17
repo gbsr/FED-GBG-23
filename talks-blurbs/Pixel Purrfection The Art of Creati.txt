@@ -1,0 +1,95 @@
+Pixel Purrfection: The Art of Creating Flawless UIs"
+"The Emoji-tional Web: Adding Fun to Functionality"
+
+"404: The Anatomy of a Hilarious Error Page"
+""
+"The Great CSS Bake-Off: How to Cook Up Awesome Styles"
+"Emoji-fy Your CSS: A Playful Take on Web Styling"
+"Web Animation Wizardry: Making Websites Dance and Dazzle"
+""
+"Performance Anxiety: Taming the Web Speed Monster"
+
+"Tech vs. Humanity: Striking a Balance in the Digital Age"
+"Nerding Out with Fonts: A Type Lover's Guide to the Web"
+""
+""
+""
+
+"Retro Resurgence: Reviving the Geocities Aesthetic"
+""
+"From Zero to Hero: Mastering Web Development Superpowers"
+"Web Socks: Unconventional Uses of the Web for Fun and Profit"
+
+""
+""
+
+
+
+30 minute talks:
+
+"404 Not Found: My Journey Through the Weirdest Error Pages"
+"Cats vs. Keyboards: The Epic Battle for Web Dominance"
+"s"
+"Emojify Everything: How to Express All Emotions in Web Design"
+"Pop-Up Nightmares: Surviving the Deluge of Annoying Modals"
+""
+"Mystery of the Vanishing Cursor: The Quest for User-Friendly UX"
+"Internet of Laughs: Hilarious IoT Fails and Fixes"
+""
+
+"Ctrl+Alt+Delete: When Web Development Gets Too Weird"
+"Surviving Tech Support: A 30-Minute Guide to Navigating Chaos"
+"CSS: The Good, The Bad, and The Ugly - A Swift Tour"
+"Emoji-fied APIs: Translating APIs into Fun & Emojis"
+
+"The Accessibility Stand-up: A Comedic Tour of Web Inclusivity"
+
+A stand-up comedy-style talk that uses humor to illustrate the ups and downs of web accessibility and the hilarious mishaps that can occur.
+"The Inclusive Improv: Making Accessibility the Star of Your Website"
+
+An interactive session where the speaker and audience engage in improv activities to demonstrate how accessibility can be both fun and vital.
+"Laughing All the Way to WCAG: A Guide to Web Comedy and Compliance"
+
+A talk that combines accessibility guidelines with funny anecdotes and practical tips for creating web content that's both accessible and entertaining.
+"Comedy of Errors: Accessibility Gaffes and How to Fix Them"
+
+A lighthearted exploration of common accessibility mistakes in web design and development, with humorous examples and solutions.
+"A Night at the Inclusive Club: Accessibility Wins and Fails"
+
+An entertaining talk that showcases both the best and worst of web accessibility in a nightclub-themed setting, with a focus on improving inclusivity.
+These talks should leave the audience laughing while also raising awareness about the importance of accessibility in web design.
+
+
+Accessibility specific:
+
+
+"Accessibility Alchemy: Turning Websites into Magic for All"
+"Deafinitely Cool: Designing for Hearing-Impaired Users"
+"Screen Readers Unite: The Superheroes of Web Accessibility"
+"Web Accessibility: The Inclusive Web's Worst-Kept Secrets"
+"Caption This: A 30-Minute Guide to Killer Video Subtitles"
+"Inclusivity with a Dash of Humor: Web Accessibility Wins"
+"The ARIA Opera: Singing Along with Accessible Web Content"
+"Keyboard Wizards: Mastering Navigation for All Users"
+"Color Blind, Not Fun Blind: Crafting Visually Friendly Websites"
+"Voice Search Shenanigans: Talking to Your Website Like a Pro"
+""
+"Emojis with "
+"Mind the Gap: Bridging the Divide Between Web and All Users"
+""
+
+"Responsive Design: Making Websites Fit Like a Snug T-Shirt"
+"Accessible and Attractive: The Unicorn of Web Design"
+"Designing for All Screens and Senses: A 30-Minute Crash Course"
+"Responsiveness and Chill: Keeping Your Website Cool and Inclusive"
+"The Web's Three R's: Responsive, Accessible, and Remarkable"
+"Making Websites: Not a One-Size-Fits-All Endeavor"
+""
+"Designing for Dummies: How to Make Your Website Foolproof"
+"Mobile Magic: Creating an Accessible Touchscreen Wonderland"
+""
+""
+"The Perfect Fit: Tailoring Websites to Every User's Needs"
+"Buttons That Don't Bite: Taming Responsive Design Challenges"
+"The Art of Balancing Act: Accessibility and Responsiveness"
+"Beyond 20/20: Perfect Vision for Accessible, Responsive Design"
