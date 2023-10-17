@@ -12,10 +12,10 @@
 /* Timetable */
 .talks-timetable {
 	display: flex;
-	flex-direction: var(--media-query--schedule-flex-direction);
+	/* flex-direction: var(--media-query--schedule-flex-direction); */
 	gap: 1rem;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center; */
+	/* align-items: center; */
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
@@ -30,6 +30,12 @@
 	text-align: center;
 	font-weight: 600;
 	background-color: rgba(46, 108, 110, 0.164);
+}
+
+.room-cloud-center,
+.room-the-garden {
+	display: flex;
+	flex-direction: column;
 }
 
 .talk-cloud-center,
