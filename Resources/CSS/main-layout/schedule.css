@@ -5,17 +5,14 @@
 }
 
 .schedule {
-	width: 100%;
 	margin-top: 4rem;
 }
 
 /* Timetable */
 .talks-timetable {
 	display: flex;
-	/* flex-direction: var(--media-query--schedule-flex-direction); */
+	flex-direction: var(--media-query--schedule-flex-direction);
 	gap: 1rem;
-	/* justify-content: center; */
-	/* align-items: center; */
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
