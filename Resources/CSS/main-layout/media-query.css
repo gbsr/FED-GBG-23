@@ -11,11 +11,10 @@
 
 @media (max-width: 1024px) {
 	:root {
-		
-		
 		--media-query--content-left-right-margin: 12rem;
 
 		--media-query--schedule-flex-direction: column;
+		
 	}
 }
 

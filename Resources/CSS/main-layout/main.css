@@ -3,7 +3,7 @@
 
 	--media-query--resolution--padding: 4rem;
 
-	--media-query--container-height: 100vh;
+	--media-query--main-height: 92vh;
 	--media-query--content-left-right-margin: 18rem;
 
 	--theme--light-color-bg: #333333;
@@ -23,6 +23,15 @@
 	margin: 0;
 	scroll-behavior: smooth;
 	/* overflow-x: hidden; */
+}
+
+/* ----------------------------- Main content here --------------------------------- */
+main {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: var(--media-query--main-height);
+	width: 100vw;
+	border-bottom: 1px black;
 }
 
 .main-content {
@@ -48,14 +57,14 @@ body {
 	height: 100vh;
 }
 .spacer,
-.spacer-talk {
+.spacer-big {
 	margin: 2rem;
 	width: 50vw;
 	height: 1px;
 	background-color: rgba(0, 0, 0, 0.192);
 }
 
-.spacer-talk {
+.spacer-big {
 	margin-top: 6rem;
 	margin-bottom: 6rem;
 }
@@ -78,14 +87,6 @@ header {
 	width: 0px;
 	transform: translateY(-0.5rem) translateX(-1.5rem);
 	z-index: 5;
-}
-
-/* ----------------------------- Main content here --------------------------------- */
-main {
-	overflow-y: auto;
-	overflow-x: hidden;
-	height: 100vh;
-	width: 100vw;
 }
 
 .tm {
@@ -114,5 +115,11 @@ main {
 	}
 	100% {
 		backdrop-filter: hue-rotate(0deg);
+	}
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--media-query--main-height: 102vh;
 	}
 }
