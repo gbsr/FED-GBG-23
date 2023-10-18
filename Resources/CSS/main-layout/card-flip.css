@@ -51,10 +51,7 @@
 .card-text1-conf,
 .card-text2-conf,
 .card-text3-conf {
-	mix-blend-mode: invert(70%);
-	text-shadow: 1px 1px 2px rgb(21, 20, 20), 0 0 1em rgb(8, 8, 8),
-		0 0 0.2em rgba(235, 230, 234, 0.316);
-	color: var(--theme--light--color-cta-alt);
+	color: var(--theme--light--color-cta_alt);
 	height: 100%;
 	width: 100%;
 }
@@ -63,27 +60,39 @@
 .card-text2-topic,
 .card-text3-topic {
 	width: fit-content;
-
-	/* to fix the 1px gap  */
+	background: var(--theme--light--color-cta-alt);
 	margin: -1px;
-	background-color: black;
 	border-radius: 0px 20px 0px 0px;
+	color: rgb(0, 0, 0);
+	/* background-color: black; */
+	text-shadow: 1px 1px 0px #ffffff49, -1px 1px 0px #ffffff60,
+		-1px -1px 0px #ffffff2a, 1px -1px 0px #acaaaa;
+
+	/* border-radius: 0px 20px 0px 0px; */
 }
+
 .card-text1-topic {
 	animation: a-fade infinite ease-in-out var(--animation-time);
-	color: var(--theme--light--color-cta-alt);
 	border-radius: 10px 10px 0px 0px !important;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
+
 .card-text2-topic {
 	animation: a-fade infinite ease-in-out var(--animation-time);
 	animation-delay: 1.88s;
-	color: var(--theme--light--color-cta-alt);
+	/* border-top: 1px solid black; */
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
 .card-text3-topic {
 	animation: a-fade infinite ease-in-out var(--animation-time);
 	animation-delay: 2.657s;
-	color: var(--theme--light--color-cta-alt);
 	border-radius: 0px 10px 10px 10px !important;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 @keyframes a-gradient {
@@ -98,20 +107,24 @@
 @keyframes a-fade {
 	0% {
 		opacity: 100%;
-		transform: translateY(0rem);
+		transform: translateY(0rem) rotateZ(0deg);
+		/* border: 0px black; */
 	}
 
 	49% {
 		opacity: 100%;
-		transform: translateY(0rem);
+		transform: translateY(0rem) rotateZ(0deg);
+		/* border: 0px black; */
 	}
 	50% {
+		/* border: 1px black; */
 		opacity: 0%;
-		transform: translateY(0.2rem);
+		transform: translateY(1rem) rotateZ(10deg);
 	}
 
 	99% {
-		transform: translateY(0.2rem);
+		/* border: 1px black; */
+		transform: translateY(0.8rem) rotateZ(10deg);
 		opacity: 0%;
 	}
 }
@@ -132,5 +145,15 @@
 	99% {
 		transform: translateX(-0.85rem) scale(1.3rem);
 		opacity: 100%;
+	}
+}
+
+@keyframes a-slide_bg {
+	0% {
+		background-position: 0px 0px;
+	}
+
+	100% {
+		background-position: 6667px 0px;
 	}
 }

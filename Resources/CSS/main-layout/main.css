@@ -10,7 +10,7 @@
 	--theme--light--color-font: rgb(53, 51, 51);
 	--theme--light--color-font-alt: rgb(84, 82, 82);
 	--theme--light--color-cta: rgb(6, 194, 169);
-	--theme--light--color-cta-alt: rgb(213, 137, 76);
+	--theme--light--color-cta-alt: rgb(187, 138, 5);
 
 	--backdrop-filter--hue-rotate: -360deg;
 
@@ -50,7 +50,7 @@ main {
 
 body {
 	margin: 0 auto;
-	background-image: url(../../Images/full_col6667x3750.svg);
+	background-image: url(../../Images/red_high_contrast_6667x3750.svg);
 	animation: a-slide_bg 200s linear infinite alternate;
 	background-size: cover;
 	overflow: hidden;
@@ -72,7 +72,7 @@ body {
 
 /* ------------------------------------- Hue rotator -------------------- */
 .container {
-	animation: a-backdrop-filter-hue-rotate 520s linear infinite alternate;
+	animation: a-backdrop-filter-hue-rotate 20s linear infinite alternate;
 	margin: 0;
 	padding: 0;
 	width: 100vw;
