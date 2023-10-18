@@ -33,6 +33,7 @@
 .room-the-garden {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .talk-the-aula {
