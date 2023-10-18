@@ -36,7 +36,8 @@
 
 .form-get-ticket {
 	display: flex;
-	flex-direction: var(--form--get-ticket-flex-dir);
+	flex-direction: column;
+	/* flex-direction: var(--form--get-ticket-flex-dir); */
 	justify-content: center;
 	align-items: center;
 	background-color: var(--theme--light--color-cta-alt);

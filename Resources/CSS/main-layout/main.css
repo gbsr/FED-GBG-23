@@ -29,10 +29,8 @@
 main {
 	overflow-y: auto;
 	overflow-x: hidden;
-	height: var(--media-query--main-height);
-	width: min(100% -2rem, 56rem);
-	width: 100vw;
-	border-bottom: 1px black;
+	height: 100vh;
+	width: 100vh;
 }
 
 .main-content {
