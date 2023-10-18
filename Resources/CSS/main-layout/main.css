@@ -51,11 +51,11 @@ main {
 body {
 	margin: 0 auto;
 	background-image: url(../../Images/red_high_contrast_6667x3750.svg);
-	animation: a-slide_bg 200s linear infinite alternate;
+	animation: a-slide_bg 260s linear infinite alternate;
 	background-size: cover;
 	overflow: hidden;
 	width: 100vw;
-	height: 100vh;
+	height: 75vh;
 }
 .spacer,
 .spacer-big {
@@ -72,7 +72,7 @@ body {
 
 /* ------------------------------------- Hue rotator -------------------- */
 .container {
-	animation: a-backdrop-filter-hue-rotate 20s linear infinite alternate;
+	animation: a-backdrop-filter-hue-rotate 200s linear infinite alternate;
 	margin: 0;
 	padding: 0;
 	width: 100vw;
