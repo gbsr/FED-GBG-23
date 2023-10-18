@@ -108,6 +108,10 @@ footer {
 	z-index: 9999;
 }
 
+.footer-link{
+	color: var(--theme--light--color-cta-alt);
+}
+
 @media (max-width: 1024px) {
 	:root {
 		--footer-bottom: -4px;
