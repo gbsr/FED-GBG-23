@@ -5,6 +5,15 @@
 	justify-content: center;
 }
 
+.container--modal {
+	position: relative;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.085);
+	/* background-color: rgba(255, 255, 255, 0.534); */
+	border-radius: 10px;
+	border: 1px black dashed;
+}
+
 .form--input {
 	background-color: pink;
 	border: 1px black solid;
@@ -14,8 +23,6 @@
 .modal-3days,
 .modal-2days,
 .modal-1days {
-	background-color: rgba(255, 255, 255, 0.085);
-	border-radius: 10px;
 	/* border: 1px dashed black; */
 	padding: 1rem;
 }
