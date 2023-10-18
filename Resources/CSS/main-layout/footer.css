@@ -108,14 +108,14 @@ footer {
 	z-index: 9999;
 }
 
-.footer-link{
+.footer-link {
 	color: var(--theme--light--color-cta-alt);
 }
 
 @media (max-width: 1024px) {
 	:root {
 		--footer-bottom: -4px;
-		--footer-bottom-right: -12px;
+		--footer-bottom-right: 1rem;
 
 		/* home */
 		--home-translateX: 9rem;
@@ -130,16 +130,16 @@ footer {
 		--about-scale: 1;
 
 		/* talks */
-		--talks-translateX: 9.3rem;
+		--talks-translateX: 8.3rem;
 		--talks-translateY: 0.5rem;
 		--talks-rotateZ: -1deg;
 		--talks-scale: 1.15;
 
 		/* get ticket */
-		--ticket-translateX: 1.5rem;
+		--ticket-translateX: 2.85rem;
 		--ticket-translateY: 0rem;
 		--ticket-rotateZ: 2.35deg;
-		--ticket-scale: 1.05;
+		--ticket-scale: 0.95;
 
 		/* schedule */
 		--schedule-translateX: 4.5rem;
