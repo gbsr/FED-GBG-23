@@ -12,7 +12,7 @@
 	--theme--light--color-cta: rgb(6, 194, 169);
 	--theme--light--color-cta-alt: rgb(213, 137, 76);
 
-	--backdrop-filter--hue-rotate: -120deg;
+	--backdrop-filter--hue-rotate: -360deg;
 
 	::-webkit-scrollbar {
 		display: none;
@@ -50,7 +50,7 @@ main {
 
 body {
 	margin: 0 auto;
-	background-image: url(../../Images/3_col_bg_1600x900.svg);
+	background-image: url(../../Images/full_col6667x3750.svg);
 	animation: a-slide_bg 200s linear infinite alternate;
 	background-size: cover;
 	overflow: hidden;
@@ -72,7 +72,7 @@ body {
 
 /* ------------------------------------- Hue rotator -------------------- */
 .container {
-	animation: a-backdrop-filter-hue-rotate 120s linear infinite alternate;
+	animation: a-backdrop-filter-hue-rotate 520s linear infinite alternate;
 	margin: 0;
 	padding: 0;
 	width: 100vw;
@@ -102,7 +102,7 @@ header {
 	}
 
 	100% {
-		background-position: 3200px 0px;
+		background-position: 6667px 0px;
 	}
 }
 
