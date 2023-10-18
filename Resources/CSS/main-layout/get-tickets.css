@@ -7,6 +7,7 @@
 
 .container--modal {
 	position: absolute;
+	display: flex;
 
 	/* center modal */
 	left: 0;
@@ -19,7 +20,7 @@
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.256);
 	z-index: 99999999;
-	backdrop-filter: invert(-100%);
+	backdrop-filter: opacity(0.5) blur(2px);
 	opacity: 0.95;
 	/* visibility: hidden; */
 	overflow-y: hidden;
