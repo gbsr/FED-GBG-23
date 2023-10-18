@@ -44,8 +44,9 @@ p,
 }
 
 .card {
-	font-size: clamp(1rem, 2.3vw + 1rem, 2.375rem) !important;
+	font-size: clamp(1rem, 0.8vw + 1.5rem, 3.375rem) !important;
 	line-height: 2rem !important;
+	padding: 0rem;
 }
 
 p,
