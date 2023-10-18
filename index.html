@@ -1883,7 +1883,7 @@
 					</div>
 					<!--------------------------- GET TICKETS -------------------->
 					<div
-						class="container--form"
+						class="container--tickets"
 						id="tickets">
 						<div class="spacer-big"></div>
 						<div class="title-huge">Get Tickets</div>
@@ -1899,80 +1899,45 @@
 							drinks available to all attendees.
 						</h2>
 
-						<div class="container--ticket-price">
-							<!-- Tickets - 3 days-->
-							<a
-								href="#"
-								class="ticket-price-button">
-								<h2 class="ticket-price">Full Pass:</h2>
-								<h2 class="ticket-price">150 &#8364;</h2>
-							</a>
-
-							<!------------------------------ Modal Setup ------------------------->
-							<div class="container--modal">
-								<!-------------------------- Modal content goes in this container-->
-								<div class="modal-3days card">
-									Buy a 3 pass ticket. Would you like to eat
-									also?
-									<a
-										href="#"
-										class="close-modal"
-										>Close test modal</a
-									>
-								</div>
+						<!-- Tickets - 3 days-->
+						<a
+							href="#full-pass"
+							class="ticket-price-button">
+							<div class="container--ticket-price">
+								<h2 class="text--ticket-price">Full Pass:</h2>
+								<h2 class="text--ticket-price">150 &#8364;</h2>
 							</div>
-
-							<div class="spacer-ticket"></div>
-
-							<!-- Tickets - 2 days-->
-							<a
-								href="#"
-								class="ticket-price-button">
-								<h2 class="ticket-price">2 Day Pass</h2>
-								<h2 class="ticket-price">90 &#8364;</h2>
-							</a>
-
-							<!------------------------------ Modal Setup ------------------------->
-							<div class="container--modal">
-								<!-------------------------- Modal content goes in this container-->
-								<div class="modal-2days card">
-									Buy a 2 pass ticket. Would you like to eat
-									also?
-									<a
-										href="#"
-										class="close-modal"
-										>Close test modal</a
-									>
-								</div>
-							</div>
-
-							<div class="spacer-ticket"></div>
-
-							<!-- Tickets - 1 days-->
-							<a
-								href="#"
-								class="ticket-price-button">
-								<h2 class="ticket-price">1 Day Pass:</h2>
-								<h2 class="ticket-price">75 &#8364;</h2>
-							</a>
-
-							<!------------------------------ Modal Setup ------------------------->
-							<div class="container--modal">
-								<!-------------------------- Modal content goes in this container-->
-								<div class="modal-1days card">
-									Buy a 1 day pass. Would you like to eat
-									also?
-									<a
-										href="#"
-										class="close-modal"
-										>Close test modal</a
-									>
-								</div>
-							</div>
-
-							<div class="spacer-ticket"></div>
-						</div>
+						</a>
 					</div>
+
+					<form
+						action="#"
+						method="post"
+						class="form-get-ticket">
+						<div class="form-item">
+							<input
+								type="text"
+								class="form-input"
+								placeholder="Full Name:"
+								aria-label="Input Full Name" />
+						</div>
+
+						<div class="form-item">
+							<input
+								type="text"
+								class="form-input"
+								placeholder="Email:"
+								aria-label="Input Email Address" />
+						</div>
+
+						<div class="form-item">
+							<button
+								class="form-button"
+								type="submit">
+								Get Pass
+							</button>
+						</div>
+					</form>
 				</div>
 			</main>
 			<footer>

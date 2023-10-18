@@ -1,65 +1,30 @@
-.container--form {
+:root {
+	--form-get-ticket-flex-dir: row;
+	--box-shadow-generic: 0px 0px 8px rgba(0, 0, 0, 0.274);
+}
+
+.container--tickets {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-
-.container--modal {
-	position: absolute;
-	display: flex;
-
-	/* center modal */
-	left: 0;
-	right: 0;
-	top: 50%;
-	margin: 0 auto;
-	transform: translateY(-50%);
-
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.256);
-	z-index: 99999999;
-	backdrop-filter: opacity(0.5) blur(2px);
-	opacity: 0.95;
-	/* visibility: hidden; */
-	overflow-y: hidden;
-}
-
-.form--input {
-	background-color: pink;
-	border: 1px black solid;
+.container--ticket-price,
+.full-pass {
+	position: relative;
+	margin: 2rem;
+	box-shadow: var(--box-shadow-generic);
+	background-color: var(--theme--light--color-cta-alt);
+	border: 1px solid rgba(0, 0, 0, 0.507);
+	border-radius: 30px;
 	padding: 1rem;
+	margin-bottom: 4rem;
+	z-index: 999999999;
 }
 
-.modal-3days,
-.modal-2days,
-.modal-1days {
-	position: absolute;
-
-	/* center modal */
-	left: 0;
-	right: 0;
-	top: 50%;
-	margin: auto;
-	transform: translateY(-50%);
-
-	width: 300px;
-	height: 300px;
-	background-color: rgba(131, 126, 126, 0.952);
-	/* background-color: rgba(255, 255, 255, 0.085); */
-	border-radius: 10px;
-	/* border: 1px dashed black; */
-	padding: 1rem;
-}
-
-.ticket-price {
+.text--ticket-price {
 	padding: 0px;
 	margin: 2rem;
-}
-
-.ticket-price-button {
-	background-color: white;
 }
 
 .spacer-ticket {
@@ -68,13 +33,36 @@
 	height: 1px;
 	border: 1px dashed rgba(0, 0, 0, 0.507);
 }
-.container--ticket-price {
-	margin: 2rem;
-	/* width: 365px; */
-	background-color: rgba(105, 75, 75, 0.123);
-	border: 1px dashed rgba(0, 0, 0, 0.507);
-	border-radius: 30px;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
-	padding: 1rem;
-	margin-bottom: 4rem;
+
+.form-get-ticket {
+	display: flex;
+	flex-direction: var(--form--get-ticket-flex-dir);
+	justify-content: center;
+	align-items: center;
+	background-color: var(--theme--light--color-cta-alt);
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: var(--box-shadow-generic);
+	/* width: 200px; */
+	height: 40px;
+}
+
+.form-item {
+	/* padding: 1rem; */
+	/* border: 1px solid pink; */
+}
+
+.full-pass {
+	background-color: var(--theme--light--color-cta-alt);
+	color: #222;
+	border: 1px solid black;
+	border-radius: 10px;
+	/* border-radius: 0.25rem; */
+	padding: 2rem;
+}
+
+@media (max-width: 1024) {
+	:root {
+		--form-get-ticket-flex-dir: column;
+	}
 }

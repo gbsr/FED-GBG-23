@@ -1,4 +1,5 @@
 :root {
+	--footer-button-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
 	--media-query-flex-direction--footer: row;
 	--media-query--footer-item-button-rotation: rotateZ(-3.6deg) scale(1.3)
 		translateX(0em) translateY(-0.4rem);
@@ -94,8 +95,9 @@ footer {
 	border-radius: 10px;
 	background-color: var(--theme--light--color-cta-alt);
 	color: black;
-	box-shadow: 0px 0px 4px rgb(0, 0, 0);
-	line-height: var(--footer-button-line-height);
+	/* border: 1px solid black; */
+	border: 1px solid rgba(0, 0, 0, 0.507);
+	box-shadow: var(--footer-button-box-shadow);
 	font-size: var(--footer-font-size);
 }
 
