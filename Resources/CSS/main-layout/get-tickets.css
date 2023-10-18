@@ -11,9 +11,22 @@
 	padding: 1rem;
 }
 
+.modal-3days,
+.modal-2days,
+.modal-1days {
+	background-color: rgba(255, 255, 255, 0.085);
+	border-radius: 10px;
+	/* border: 1px dashed black; */
+	padding: 1rem;
+}
+
 .ticket-price {
 	padding: 0px;
-	margin: unset;
+	margin: 2rem;
+}
+
+.ticket-price-button {
+	background-color: white;
 }
 
 .spacer-ticket {
