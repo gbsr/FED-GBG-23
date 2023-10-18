@@ -48,8 +48,7 @@
 	border-radius: 10px;
 	padding: 1rem;
 	display: flex;
-	align-content: stretch;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
@@ -57,10 +56,13 @@
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	max-width: 365px;
+	align-content: center;
+	width: min(100% - 0px, 365px);
 }
 
 .timeslot {
-	width: 365px;
+	width: min(100% - 0px, 365px);
+	/* width: 365px; */
 	background-color: rgba(105, 75, 75, 0.123);
 	border: 1px dashed rgba(0, 0, 0, 0.507);
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
