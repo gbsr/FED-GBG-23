@@ -21,8 +21,6 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	/* scroll-behavior: smooth; */
-	/* overflow-x: hidden; */
 }
 
 /* ----------------------------- Main content here --------------------------------- */
@@ -30,7 +28,6 @@ main {
 	overflow-y: auto;
 	overflow-x: hidden;
 	height: 100vh;
-	width: 100vh;
 }
 
 .main-content {
@@ -48,12 +45,12 @@ main {
 
 body {
 	margin: 0 auto;
-	background-image: url(../../Images/red_high_contrast_6667x3750.svg);
-	animation: a-slide_bg 260s linear infinite alternate;
+	background-image: url(../../Images/bg_cloud-cover-LC.svg);
+	animation: a-slide_bg 520s ease-in-out infinite alternate;
 	background-size: cover;
 	overflow: hidden;
 	width: 100vw;
-	height: 75vh;
+	height: 100vh;
 }
 .spacer,
 .spacer-big {
@@ -75,7 +72,6 @@ body {
 	padding: 0;
 	width: 100vw;
 	min-height: 100vh;
-	/* background-color: rgba(0, 0, 0, 0.288); */
 	display: flex;
 	overflow-x: hidden;
 }
@@ -96,11 +92,11 @@ header {
 
 @keyframes a-slide_bg {
 	0% {
-		background-position: 0px 0px;
+		background-position: -100% 0%;
 	}
 
 	100% {
-		background-position: 6667px 0px;
+		background-position: 100% 0%;
 	}
 }
 
