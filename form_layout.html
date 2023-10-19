@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Layout and Validation</title>
+		<link rel="stylesheet" href="Resources/CSS/main-layout/fonts.css" />
+		<link rel="stylesheet" href="Resources/CSS/main-layout/main.css" />
+		<link
+			rel="stylesheet"
+			href="Resources/CSS/main-layout/get-tickets.css" />
+		<link
+			rel="stylesheet"
+			href="Resources/CSS/main-layout/get-tickets-form-style.css" />
+	</head>
+	<body>
+		<form>
+			<fieldset>
+
+				<h1>Please enter your details.</h1>
+				<div class="input-form">
+					<h3 for="first-name">First name: </h3>
+					<input id="first-name" name="first-name" type="text" required />
+					<span></span>
+				</div>
+
+				<div class="input-form">
+					<h3 for="last-name">Last name: </h3>
+					<input id="last-name" name="last-name" type="text" required />
+					<span></span>
+				</div>
+				<div class="input-form">
+					<h3 for="email">Email: </h3>
+					<input id="email" name="email" type="email" required />
+					<span></span>
+				</div>
+				
+				<div><button>Submit</button></div>
+				<!-- When submitted -->
+				<!-- <h2>Your conference pass will be emailed to you shortly</h2> -->
+				<!-- <h2 class="info">Enjoy FEX 2023!</h2> -->
+			</fieldset>
+		</form>
+	</body>
+</html>

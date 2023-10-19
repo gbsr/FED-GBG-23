@@ -1,0 +1,178 @@
+/* https://www.youtube.com/watch?v=BT7FZooiqWw */
+/* styling for radio buttons */
+
+[type="radio"] {
+	opacity: 0;
+	display: hidden;
+}
+
+[type="radio"] + label {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	/* color: red; */
+}
+
+/* draw the radio button */
+[type="radio"] + label::before {
+	content: "";
+	position: absolute;
+	width: 1.65rem;
+	height: 1.65rem;
+	border-radius: 30%;
+
+	border: 1px solid black;
+	box-shadow: inset 1px 1px 3px #cccccc57;
+	background-color: rgba(204, 199, 199, 0.315);
+
+	margin-left: -2rem;
+	left: 0px;
+	top: 25%;
+}
+
+[type="radio"]:checked + label::before {
+	content: "";
+	border: 1px solid black;
+	transform: scale(1.1);
+}
+
+/* when radio is checked */
+[type="radio"]:checked + label::after {
+	content: "✓";
+	position: absolute;
+	left: -1.7rem;
+	top: 0.25rem;
+	font-size: 1.85rem;
+	font-weight: 900;
+	color: black;
+	opacity: 1;
+	scale: 1;
+	transition: all 150ms;
+	/* background-color: rgba(187, 141, 15, 0.78); */
+	/* box-shadow: 0px 0px 2px black; */
+}
+
+/* when radio is unchecked */
+[type="radio"]:not(:checked) + label::after {
+	content: "✓";
+	position: absolute;
+	left: -1.7rem;
+	top: 0.25rem;
+	font-size: 1.85rem;
+	font-weight: 900;
+	color: black;
+	opacity: 1;
+	scale: 0;
+	/* background-color: rgba(187, 141, 15, 0.78); */
+	/* box-shadow: 0px 0px 2px black; */
+}
+
+.radio-button {
+	cursor: pointer;
+	flex-wrap: nowrap;
+	margin-bottom: 0.5rem;
+
+	border: 1px dashed black;
+}
+
+fieldset {
+	position: relative;
+	border-radius: 30px;
+	background-color: rgba(187, 141, 15, 0.78);
+	backdrop-filter: blur(2px);
+	/* background-color: var(--theme--light--color-cta-alt); */
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: var(--box-shadow-generic);
+	z-index: 9999999;
+}
+
+fieldset > div {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.radio-button-label {
+	font-family: "Raleway", sans-serif;
+	font-size: clamp(2rem, 0vw + 1.5rem, 3rem);
+}
+
+button,
+label,
+input {
+	display: block;
+	font-family: "Rubik" sans-serif;
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+	height: 30px;
+}
+
+.validator {
+	text-align: center;
+}
+
+.input-form {
+	min-width: 224px;
+}
+
+input {
+	padding: 1rem;
+	box-shadow: inset 1px 1px 3px #cccccc57;
+	border-radius: 5px;
+	background-color: rgba(204, 199, 199, 0.315);
+}
+
+input:hover,
+input:focus {
+	border: 1px dashed black;
+	background-color: #e6dfdf6b;
+	box-shadow: inset 1px 1px 3px #cccccc57;
+	border: 2px rgb(151, 147, 147);
+}
+
+input + .validator {
+	position: relative;
+	transform: translateX(-2rem) translateY(-0.25rem);
+}
+
+input + .validator::before {
+	position: absolute;
+}
+
+input:valid {
+	background-color: green;
+}
+
+input:invalid,
+input:valid {
+	border: 1px solid black;
+}
+
+input:invalid + .validator::before {
+	content: "✖";
+	font-size: 2rem;
+	color: red;
+	text-shadow: 0px 0px 1px black;
+}
+
+input:valid + .validator::before {
+	content: "✓";
+	font-size: 2rem;
+	color: green;
+	text-shadow: 0px 0px 4px rgb(177, 170, 170);
+}
+
+/* this doesn't work but it should and I'm not sure why? */
+/* input:valid {
+	background-color: rgb(182, 51, 51) !important; <----- doesn't work no matter what I do?
+	border: 10px solid green; <--- terrible border works
+} */
+button {
+	width: 60%;
+	margin: 0 auto;
+}
