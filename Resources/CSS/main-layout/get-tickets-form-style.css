@@ -1,6 +1,9 @@
 /* https://www.youtube.com/watch?v=BT7FZooiqWw */
 /* styling for radio buttons */
 
+:root {
+	--a-form-transition: all ease-in-out 150ms;
+}
 [type="radio"] {
 	opacity: 0;
 	display: hidden;
@@ -46,7 +49,7 @@
 	color: black;
 	opacity: 1;
 	scale: 1;
-	transition: all 150ms;
+	transition: var(--a-form-transition);
 }
 
 /* when radio is unchecked */
@@ -62,21 +65,21 @@
 	scale: 0;
 }
 
-.radio-button-container .preferred-lunch {
-	display: none;
+.get-lunch {
+	opacity: 0;
+	max-height: 0px;
+	transition: calc(var(--a-form-transition) - 50);
+}
+#one-day-pass:checked ~ .get-lunch {
+	opacity: 1;
+	max-height: 400px;
+	transition: var(--a-form-transition);
 }
 
 #three-day-pass:checked ~ label,
 #two-day-pass:checked ~ label,
 #one-day-pass:checked ~ label {
 	font-weight: 600;
-}
-
-#three-day-pass:checked ~ .get-lunch,
-#two-day-pass:checked ~ .get-lunch,
-#one-day-pass:checked ~ .get-lunch,
-#get-lunch input:checked ~ .preferred-lunch {
-	display: block;
 }
 
 .radio-button {
