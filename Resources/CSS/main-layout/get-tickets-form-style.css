@@ -13,7 +13,6 @@
 	/* color: red; */
 }
 
-/* draw the radio button */
 [type="radio"] + label::before {
 	content: "";
 	position: absolute;
@@ -37,7 +36,6 @@
 	transform: scale(1.1);
 }
 
-/* when radio is checked */
 [type="radio"]:checked + label::after {
 	content: "✓";
 	position: absolute;
@@ -49,8 +47,6 @@
 	opacity: 1;
 	scale: 1;
 	transition: all 150ms;
-	/* background-color: rgba(187, 141, 15, 0.78); */
-	/* box-shadow: 0px 0px 2px black; */
 }
 
 /* when radio is unchecked */
@@ -64,8 +60,23 @@
 	color: black;
 	opacity: 1;
 	scale: 0;
-	/* background-color: rgba(187, 141, 15, 0.78); */
-	/* box-shadow: 0px 0px 2px black; */
+}
+
+.radio-button-container .preferred-lunch {
+	display: none;
+}
+
+#three-day-pass:checked ~ label,
+#two-day-pass:checked ~ label,
+#one-day-pass:checked ~ label {
+	font-weight: 600;
+}
+
+#three-day-pass:checked ~ .get-lunch,
+#two-day-pass:checked ~ .get-lunch,
+#one-day-pass:checked ~ .get-lunch,
+#get-lunch input:checked ~ .preferred-lunch {
+	display: block;
 }
 
 .radio-button {
@@ -82,7 +93,6 @@ fieldset {
 	border-radius: 30px;
 	background-color: rgba(187, 141, 15, 0.78);
 	backdrop-filter: blur(2px);
-	/* background-color: var(--theme--light--color-cta-alt); */
 	border-radius: 10px;
 	border: 1px solid black;
 	box-shadow: var(--box-shadow-generic);
@@ -169,11 +179,6 @@ input:valid + .validator::before {
 	text-shadow: 0px 0px 4px rgb(177, 170, 170);
 }
 
-/* this doesn't work but it should and I'm not sure why? */
-/* input:valid {
-	background-color: rgb(182, 51, 51) !important; <----- doesn't work no matter what I do?
-	border: 10px solid green; <--- terrible border works
-} */
 button {
 	width: 60%;
 	margin: 0 auto;
