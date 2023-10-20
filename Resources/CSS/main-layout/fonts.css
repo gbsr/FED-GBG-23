@@ -26,6 +26,14 @@ label {
 	top: -1.33rem;
 	text-align: center;
 }
+.radio-button-label {
+	font-family: "Raleway", sans-serif;
+	font-size: clamp(2rem, 0vw + 1.5rem, 3rem);
+}
+.radio-button-label-add-lunch {
+	font-family: "Raleway", sans-serif;
+	font-size: calc(clamp(2rem, 0vw + 1rem, 3rem) - 0.85rem);
+}
 
 h1,
 h2,
@@ -57,13 +65,19 @@ p,
 
 p,
 .break,
-input {
+input,
+.add-lunch-text {
 	font-size: clamp(1rem, 0.5vw + 1rem, 1.833rem);
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	text-align: left;
 	line-height: 2rem;
 	letter-spacing: 0.2rem;
+}
+
+.add-lunch-text{
+	text-align: center;
+	font-size: 1.5rem;
 }
 h1 {
 	font-size: clamp(1rem, 1vw + 2rem, 3rem);

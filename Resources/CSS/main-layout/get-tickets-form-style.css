@@ -4,19 +4,25 @@
 :root {
 	--a-form-transition: all ease-in-out 150ms;
 }
-[type="radio"] {
+[type="radio"],
+[type="checkbox"],
+[type="radio_lunch"] {
 	opacity: 0;
 	display: hidden;
 }
 
-[type="radio"] + label {
+[type="radio"] + label,
+[type="checkbox"] + label,
+[type="radio_lunch"] + label {
 	position: relative;
 	cursor: pointer;
 	display: inline-block;
 	/* color: red; */
 }
 
-[type="radio"] + label::before {
+[type="radio"] + label::before,
+[type="checkbox"] + label::before,
+[type="radio_lunch"] + label::before {
 	content: "";
 	position: absolute;
 	width: 1.65rem;
@@ -33,13 +39,17 @@
 	top: 25%;
 }
 
-[type="radio"]:checked + label::before {
+[type="radio"]:checked + label::before,
+[type="checkbox"]:checked + label::before,
+[type="radio_lunch"]:checked + label::before {
 	content: "";
 	border: 1px solid black;
 	transform: scale(1.1);
 }
 
-[type="radio"]:checked + label::after {
+[type="radio"]:checked + label::after,
+[type="checkbox"]:checked + label::after,
+[type="radio_lunch"]:checked + label::after {
 	content: "✓";
 	position: absolute;
 	left: 3.3rem;
@@ -53,7 +63,9 @@
 }
 
 /* when radio is unchecked */
-[type="radio"]:not(:checked) + label::after {
+[type="radio"]:not(:checked) + label::after,
+[type="checkbox"]:not(:checked) + label::after,
+[type="radio_lunch"]:not(:checked) + label::after {
 	content: "✓";
 	position: absolute;
 	left: 3.3rem;
@@ -66,13 +78,42 @@
 }
 
 .get-lunch {
+	display: in-line flex;
+	align-items: center;
 	opacity: 0;
 	max-height: 0px;
+	/* padding-left: 2.25rem; */
+	/* scale: 0.9; */
 	transition: calc(var(--a-form-transition) - 50);
 }
 #one-day-pass:checked ~ .get-lunch {
 	opacity: 1;
+	max-height: 1080px;
+	transition: var(--a-form-transition);
+}
+
+.have-allergies {
+	opacity: 0;
+	max-height: 0px;
+	transition: var(--a-form-transition);
+}
+
+#have_allergies:checked ~ .input-allergies {
+	opacity: 1;
 	max-height: 400px;
+	transition: var(--a-form-transition);
+}
+
+#prefer-lunch:checked ~ .type-of-lunch {
+	max-height: 400px;
+	opacity: 1;
+	transition: var(--a-form-transition);
+}
+
+.type-of-lunch {
+	padding: 1rem;
+	opacity: 0;
+	max-height: 0px;
 	transition: var(--a-form-transition);
 }
 
@@ -88,7 +129,12 @@
 	flex-wrap: nowrap;
 	margin-bottom: 0.5rem;
 
-	border: 1px dashed black;
+	border: 1px dashed rgba(0, 0, 0, 0.199);
+	border-radius: 10px;
+}
+
+.radio-button-lunch {
+	border: none;
 }
 
 fieldset {
@@ -103,14 +149,10 @@ fieldset {
 }
 
 fieldset > div {
+	width: 320px;
 	margin-bottom: 1rem;
 	display: flex;
 	flex-flow: row wrap;
-}
-
-.radio-button-label {
-	font-family: "Raleway", sans-serif;
-	font-size: clamp(2rem, 0vw + 1.5rem, 3rem);
 }
 
 button,
@@ -160,7 +202,8 @@ input + .validator::before {
 }
 
 input:valid {
-	background-color: green;
+	background-color: rgba(204, 199, 199, 0.315);
+	box-shadow: inset 1px 1px 3px #cccccc57;
 }
 
 input:invalid,
