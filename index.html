@@ -1270,7 +1270,7 @@
 									<input type="checkbox" id="prefer-lunch" name="prefer-lunch" />
 									<label for="prefer-lunch" class="radio-button-label">Add Lunch 10 &#8364;</label>
 									<div class="type-of-lunch">
-										<p>What type of food do you prefer?</p>
+										<p class="radio-button-label">What type of food do you prefer?</p>
 
 										<div class="radio-button-lunch">
 											<input type="radio" id="vegetarian" name="type-of-lunch" checked />
@@ -1286,8 +1286,11 @@
 											<label for="meat" class="radio-button-label">Meat</label>
 
 											<div class="allergies">
-												<p>Any type of allergies we need to be aware of?</p>
-												<input type="text" name="input_allergies" id="input_allergies" />
+												<div class="input-form">
+													<h3 for="input-allergies">Any allergies we need to be aware of?</h3>
+													<br />
+													<input id="input-allergies" name="input-allergies" type="text" />
+												</div>
 											</div>
 										</div>
 									</div>
