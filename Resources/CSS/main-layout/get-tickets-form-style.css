@@ -3,6 +3,7 @@
 
 :root {
 	--a-form-transition: all ease-in-out 150ms;
+	--total-sum: 1000;
 }
 [type="radio"],
 [type="checkbox"],
@@ -77,19 +78,14 @@
 	scale: 0;
 }
 
+.preferred-lunch {
+	padding-top: 1rem;
+}
 .get-lunch {
 	display: in-line flex;
 	align-items: center;
-	opacity: 0;
-	max-height: 0px;
 	/* padding-left: 2.25rem; */
 	/* scale: 0.9; */
-	transition: calc(var(--a-form-transition) - 50);
-}
-#one-day-pass:checked ~ .get-lunch {
-	opacity: 1;
-	max-height: 1080px;
-	transition: var(--a-form-transition);
 }
 
 .have-allergies {
@@ -105,7 +101,7 @@
 }
 
 #prefer-lunch:checked ~ .type-of-lunch {
-	max-height: 400px;
+	max-height: 1080px;
 	opacity: 1;
 	transition: var(--a-form-transition);
 }
@@ -121,6 +117,7 @@
 #two-day-pass:checked ~ label,
 #one-day-pass:checked ~ label {
 	font-weight: 600;
+	--total-sum: 556;
 }
 
 .radio-button {
@@ -137,7 +134,23 @@
 	border: none;
 }
 
+.order-now {
+	text-align: center;
+	width: 180px;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: rgba(204, 199, 199, 0.315);
+	color: black;
+	/* border: 1px solid black; */
+	border: 2px solid rgba(0, 0, 0, 0.507);
+	box-shadow: var(--footer-button-box-shadow);
+	font-size: var(--footer-font-size);
+}
+
 fieldset {
+	display: inline-flex;
+	align-items: center;
+	flex-direction: column;
 	position: relative;
 	border-radius: 30px;
 	background-color: rgba(187, 141, 15, 0.78);
@@ -155,7 +168,6 @@ fieldset > div {
 	flex-flow: row wrap;
 }
 
-button,
 label,
 input {
 	display: block;
@@ -223,9 +235,4 @@ input:valid + .validator::before {
 	font-size: 2rem;
 	color: green;
 	text-shadow: 0px 0px 4px rgb(177, 170, 170);
-}
-
-button {
-	width: 60%;
-	margin: 0 auto;
 }

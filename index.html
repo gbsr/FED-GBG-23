@@ -1247,7 +1247,7 @@
 								<input id="email" name="email" type="email" required />
 								<div class="validator"></div>
 							</div>
-
+							<!--ticket selection-->
 							<div class="radio-button">
 								<input type="radio" id="three-day-pass" name="type-of-pass" checked />
 								<label for="three-day-pass" class="radio-button-label"> 3 Day Pass 150 &#8364;</label>
@@ -1263,32 +1263,31 @@
 								<label for="one-day-pass" class="radio-button-label">1 Day Pass 60 &#8364;</label>
 
 								<!-- if the user wants lunch-->
-								<div class="get-lunch">
-									<div class="preferred-lunch">
-										<input type="checkbox" id="prefer-lunch" name="prefer-lunch" checked />
-										<label for="prefer-lunch" class="add-lunch-text">Add Lunch 10 &#8364;</label>
-										<div class="type-of-lunch">
-											<p>What type of food do you prefer?</p>
+							</div>
+							<!-- lunch -->
+							<div class="get-lunch">
+								<div class="preferred-lunch">
+									<input type="checkbox" id="prefer-lunch" name="prefer-lunch" />
+									<label for="prefer-lunch" class="radio-button-label">Add Lunch 10 &#8364;</label>
+									<div class="type-of-lunch">
+										<p>What type of food do you prefer?</p>
 
-											<div class="radio-button-lunch">
-												<input type="radio" id="vegetarian" name="type-of-lunch" checked />
-												<label for="vegetarian" class="radio-button-label-add-lunch"
-													>Vegetarian</label
-												>
-											</div>
+										<div class="radio-button-lunch">
+											<input type="radio" id="vegetarian" name="type-of-lunch" checked />
+											<label for="vegetarian" class="radio-button-label">Vegetarian</label>
+										</div>
 
-											<div class="radio-button-lunch">
-												<input type="radio" id="vegan" name="type-of-lunch" />
-												<label for="vegan" class="radio-button-label-add-lunch">Vegan</label>
-											</div>
-											<div class="radio-button-lunch">
-												<input type="radio" id="meat" name="type-of-lunch" />
-												<label for="meat" class="radio-button-label-add-lunch">Meat</label>
+										<div class="radio-button-lunch">
+											<input type="radio" id="vegan" name="type-of-lunch" />
+											<label for="vegan" class="radio-button-label">Vegan</label>
+										</div>
+										<div class="radio-button-lunch">
+											<input type="radio" id="meat" name="type-of-lunch" />
+											<label for="meat" class="radio-button-label">Meat</label>
 
-												<div class="allergies">
-													<p>Any type of allergies we need to be aware of?</p>
-													<input type="text" name="input_allergies" id="input_allergies" />
-												</div>
+											<div class="allergies">
+												<p>Any type of allergies we need to be aware of?</p>
+												<input type="text" name="input_allergies" id="input_allergies" />
 											</div>
 										</div>
 									</div>
@@ -1298,6 +1297,10 @@
 							<!-- When submitted -->
 							<!-- <h2>Your conference pass will be emailed to you shortly</h2> -->
 							<!-- <h2 class="info">Enjoy FEX 2023!</h2> -->
+							<div class="order-now">
+								<p><var>total_sum</var> &#8364;</p>
+								<a href="#" target="_blank"><h3>Purchase Ticket</h3> </a>
+							</div>
 						</fieldset>
 					</form>
 					<!-- END FORMS-->
