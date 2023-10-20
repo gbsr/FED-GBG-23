@@ -68,6 +68,7 @@
 }
 
 .radio-button {
+	flex-direction: column;
 	cursor: pointer;
 	flex-wrap: nowrap;
 	margin-bottom: 0.5rem;
