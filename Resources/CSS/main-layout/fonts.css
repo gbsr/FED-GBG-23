@@ -22,8 +22,9 @@ a {
 
 /* --------------------------- Sizing etc ---------------------------------------- */
 label {
-	left: 2rem;
+	/* left: 2rem; */
 	top: -1.33rem;
+	text-align: center;
 }
 
 h1,
